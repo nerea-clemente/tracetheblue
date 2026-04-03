@@ -403,6 +403,24 @@ h3, .h3 {
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F7FF 100%);
 }
 
+.hero--image {
+  background: linear-gradient(180deg, rgba(12, 50, 96, 0.75) 0%, rgba(12, 50, 96, 0.85) 100%),
+    url('ed-wingate-PY324VYTNz0-unsplash.jpg') center center / cover no-repeat;
+  color: #FFFFFF;
+}
+
+.hero--image h1 {
+  color: #FFFFFF;
+}
+
+.hero--image .lead {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero--image .eyebrow {
+  color: #5DCAA5;
+}
+
 .hero .eyebrow {
   margin-bottom: 16px;
 }
