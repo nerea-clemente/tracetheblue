@@ -1246,16 +1246,20 @@ h3, .h3 {
   padding-bottom: 12px;
 }
 
+/* Each phone column — fixed size */
+.phone-col {
+  width: 260px;
+  min-width: 260px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
 /* Phone frame */
 .phone {
   background: #111318;
   border-radius: 28px;
   padding: 10px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.12);
-  width: 280px;
-  min-width: 280px;
-  flex-shrink: 0;
-  scroll-snap-align: start;
 }
 
 .phone-notch {
@@ -1270,7 +1274,7 @@ h3, .h3 {
   background: #F0F7FF;
   border-radius: 20px;
   overflow: hidden;
-  height: 520px;
+  height: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -1836,12 +1840,11 @@ h3, .h3 {
 
   .phone-row {
     overflow-x: visible;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
-  .phone {
-    width: 280px;
-    min-width: 280px;
+  .phone-col {
+    width: 260px;
+    min-width: 260px;
   }
 }
