@@ -1186,3 +1186,649 @@ h3, .h3 {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* ============================================
+   Phone Mockups — Consumer Scan Experience
+   ============================================ */
+
+/* Flow columns */
+.flows {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flow-label {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.flow-label .flow-name {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  color: #0C3260;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.flow-label .flow-desc {
+  font-size: 0.8125rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+.flow-badge {
+  display: inline-block;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.badge-starter { background: #EAF4FB; color: #1565A8; }
+.badge-growth { background: #E1F5EE; color: #0F6E56; }
+.badge-scale { background: #E8F0FB; color: #0C3260; }
+
+/* Phone scroll row */
+.phone-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 12px;
+}
+
+/* Phone frame */
+.phone {
+  background: #111318;
+  border-radius: 28px;
+  padding: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.12);
+  min-width: 260px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.phone-notch {
+  width: 60px;
+  height: 6px;
+  background: #222;
+  border-radius: 3px;
+  margin: 0 auto 8px;
+}
+
+.phone-screen {
+  background: #F0F7FF;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.phone-label {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 8px;
+}
+
+/* Screen nav */
+.screen-nav {
+  background: #FFFFFF;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #C8DFF0;
+}
+
+.screen-nav .nav-logo {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  color: #0C3260;
+}
+
+.screen-nav .nav-logo span { color: #4A9ED6; }
+
+.screen-nav .nav-back {
+  font-size: 10px;
+  color: #1565A8;
+}
+
+/* Screen hero */
+.screen-hero {
+  padding: 14px;
+  position: relative;
+}
+
+.screen-hero .hero-eyebrow {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5DCAA5;
+  margin-bottom: 4px;
+}
+
+.screen-hero .hero-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.screen-hero .hero-sub {
+  font-size: 10px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 3px;
+}
+
+.verified-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 20px;
+  padding: 3px 8px;
+  font-size: 9px;
+  color: #FFFFFF;
+  margin-top: 8px;
+}
+
+.verified-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #5DCAA5;
+}
+
+/* Screen body */
+.screen-body {
+  padding: 12px 14px;
+}
+
+/* Data cards */
+.data-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.data-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 8px 10px;
+  border: 0.5px solid #C8DFF0;
+}
+
+.data-card .dc-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5DCAA5;
+  margin-bottom: 2px;
+}
+
+.data-card .dc-value {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #0C3260;
+  line-height: 1;
+}
+
+.data-card .dc-sub {
+  font-size: 9px;
+  color: #888;
+  margin-top: 2px;
+}
+
+/* Section heading in phone */
+.screen-section-heading {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  color: #0C3260;
+  margin-bottom: 6px;
+}
+
+/* Cert pills */
+.cert-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.cert-pill {
+  background: #EAF4FB;
+  border: 0.5px solid #C8DFF0;
+  border-radius: 20px;
+  padding: 3px 8px;
+  font-size: 9px;
+  color: #1565A8;
+  font-weight: 600;
+}
+
+/* Journey dots */
+.journey {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.journey-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.journey-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  background: #C8DFF0;
+}
+
+.journey-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4A9ED6;
+  border: 2px solid #FFFFFF;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3px;
+}
+
+.journey-dot.past { background: #5DCAA5; }
+
+.journey-label {
+  font-size: 8px;
+  color: #888;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Farm section in phone */
+.farm-section {
+  background: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  border: 0.5px solid #C8DFF0;
+}
+
+.farm-img-placeholder {
+  height: 52px;
+  background: linear-gradient(135deg, #0C4A3A, #5DCAA5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.farm-img-label {
+  font-size: 8px;
+  color: rgba(255,255,255,0.6);
+  font-style: italic;
+}
+
+.farm-body {
+  padding: 8px 10px;
+}
+
+.farm-body .farm-name {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  color: #0C3260;
+}
+
+.farm-body .farm-location {
+  font-size: 9px;
+  color: #888;
+  margin-top: 1px;
+}
+
+.farm-body .farm-quote {
+  font-size: 9px;
+  color: #1A1A2E;
+  font-style: italic;
+  margin-top: 5px;
+  line-height: 1.4;
+  border-left: 2px solid #5DCAA5;
+  padding-left: 6px;
+}
+
+/* Map placeholder */
+.map-placeholder {
+  height: 80px;
+  background: linear-gradient(160deg, #B8D4E8 0%, #D4E8F5 100%);
+  border-radius: 8px;
+  border: 0.5px solid #C8DFF0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-pin {
+  width: 10px;
+  height: 10px;
+  background: #4A9ED6;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.map-label {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 8px;
+  color: #1565A8;
+  background: rgba(255,255,255,0.8);
+  padding: 2px 6px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+/* Score badge in screen */
+.score-badge-screen {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 0.5px solid #C8DFF0;
+  margin-bottom: 8px;
+}
+
+.score-letter-sm {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.score-info .score-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  color: #0C3260;
+}
+
+.score-info .score-sub {
+  font-size: 9px;
+  color: #888;
+  margin-top: 1px;
+}
+
+/* Score category bars */
+.score-cats {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.score-cat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.score-cat .cat-label {
+  font-size: 8px;
+  color: #1A1A2E;
+  width: 52px;
+  flex-shrink: 0;
+}
+
+.score-cat .cat-bar {
+  flex: 1;
+  height: 5px;
+  background: #C8DFF0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.score-cat .cat-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.score-cat .cat-grade {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 8px;
+  width: 10px;
+  text-align: center;
+}
+
+/* Score breakdown cards */
+.sb-card {
+  background: #FFFFFF;
+  border-radius: 7px;
+  padding: 7px 10px;
+  border: 0.5px solid #C8DFF0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.sb-grade {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+  font-size: 11px;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.sb-info { flex: 1; }
+
+.sb-label {
+  font-size: 9px;
+  font-weight: 600;
+  color: #0C3260;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.sb-sub {
+  font-size: 8px;
+  color: #888;
+}
+
+.sb-pct {
+  font-size: 8px;
+  color: #888;
+  font-weight: 600;
+}
+
+/* A-F scale */
+.af-scale {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 8px;
+}
+
+.af-item {
+  flex: 1;
+  border-radius: 4px;
+  padding: 4px 2px;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+  font-size: 10px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+
+.af-item.active {
+  opacity: 1;
+  transform: scaleY(1.15);
+  transform-origin: bottom;
+}
+
+/* Screen CTA */
+.screen-cta-btn {
+  background: #4A9ED6;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 7px 14px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+/* Source line */
+.screen-source {
+  font-size: 8px;
+  color: #888;
+  text-align: center;
+  padding: 6px 0 8px;
+  border-top: 0.5px solid #C8DFF0;
+  margin-top: 6px;
+}
+
+/* Score colour vars */
+.score-a { background: #4A9ED6; }
+.score-b { background: #2E9E72; }
+.score-c { background: #C49B00; }
+.score-d { background: #C4521A; }
+.score-f { background: #A02020; }
+
+/* Not rated pill */
+.not-rated-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #EAF4FB;
+  border: 0.5px solid #C8DFF0;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 9px;
+  color: #1565A8;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* FIFO section */
+.fifo-section {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 8px 10px;
+  border: 0.5px solid #C8DFF0;
+  margin-bottom: 8px;
+}
+
+.fifo-bar-track {
+  background: #C8DFF0;
+  border-radius: 4px;
+  height: 6px;
+  margin: 5px 0 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fifo-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #5DCAA5;
+  border-radius: 4px;
+}
+
+.fifo-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 7px;
+  color: #888;
+}
+
+/* Score status bar */
+.score-status-bar {
+  padding: 5px 14px;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+/* Progress bar in phone */
+.phone-progress-bar {
+  background: #C8DFF0;
+  border-radius: 4px;
+  height: 5px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+
+.phone-progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: #4A9ED6;
+}
+
+@media (min-width: 768px) {
+  .flows {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .phone-row {
+    overflow-x: visible;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .phone {
+    min-width: 240px;
+    max-width: 280px;
+  }
+}

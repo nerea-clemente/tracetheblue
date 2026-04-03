@@ -119,23 +119,295 @@
       </div>
     </section>
 
-    <!-- Section 3 -The Consumer Experience -->
+    <!-- Section 3 - The Consumer Experience -->
     <section class="section section--white">
       <div class="container">
         <div class="text-center mb-48">
           <p class="eyebrow mb-16">The Experience</p>
           <h2>What the consumer sees.</h2>
+          <p class="lead mt-24" style="max-width: 600px; margin-left: auto; margin-right: auto;">A consumer scans your QR code. This is what appears.</p>
         </div>
 
-        <div class="mockup-row" style="max-width: 560px; margin: 0 auto;">
-          <div class="mockup">
-            <div class="mockup__frame">BluePrint</div>
-            <p class="mockup__caption">Your farm and product story. Video, photos, origin map, certifications, emissions data, production journey. You choose the depth.</p>
+        <div class="flows">
+
+          <!-- Flow 1: BluePrint -->
+          <div class="flow">
+            <div class="flow-label">
+              <div class="flow-name">BluePrint</div>
+              <div class="flow-desc">Farm story, product data, certifications, journey.</div>
+            </div>
+            <div class="phone-row">
+
+              <!-- Screen 1: Product Home -->
+              <div>
+                <div class="phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="screen-nav">
+                      <span class="nav-logo">Blue<span>.</span></span>
+                      <span class="nav-back">Back</span>
+                    </div>
+                    <div class="screen-hero" style="background: linear-gradient(160deg, #0C3260 0%, #1565A8 100%);">
+                      <div class="hero-eyebrow">Your product</div>
+                      <div class="hero-title">Salmon Fillet 400g</div>
+                      <div class="hero-sub">Fjord Harvest AS. Tromso, Norway</div>
+                      <div class="verified-pill">
+                        <div class="verified-dot"></div>
+                        Verified by Blue
+                      </div>
+                    </div>
+                    <div class="screen-body">
+                      <div class="not-rated-pill">Fully traced. Not yet rated.</div>
+                      <div class="data-row">
+                        <div class="data-card">
+                          <div class="dc-label">Method</div>
+                          <div class="dc-value" style="font-size:10px">Net pen</div>
+                          <div class="dc-sub">Open fjord</div>
+                        </div>
+                        <div class="data-card">
+                          <div class="dc-label">Species</div>
+                          <div class="dc-value" style="font-size:10px">Atlantic Salmon</div>
+                        </div>
+                      </div>
+                      <div class="cert-row">
+                        <span class="cert-pill">ASC</span>
+                        <span class="cert-pill">GlobalG.A.P.</span>
+                        <span class="cert-pill">IFFO RS</span>
+                      </div>
+                      <div class="screen-cta-btn">See full farm story</div>
+                    </div>
+                    <div class="screen-source">Producer data. Verified by Blue.</div>
+                  </div>
+                </div>
+                <p class="phone-label">Product home</p>
+              </div>
+
+              <!-- Screen 2: Product Data -->
+              <div>
+                <div class="phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="screen-nav">
+                      <span class="nav-logo">Blue<span>.</span></span>
+                      <span class="nav-back">Product</span>
+                    </div>
+                    <div class="screen-body" style="padding-top: 10px;">
+                      <div class="screen-section-heading">Environmental data</div>
+                      <div class="data-row">
+                        <div class="data-card">
+                          <div class="dc-label">CO2e / kg</div>
+                          <div class="dc-value">3.1kg</div>
+                          <div class="dc-sub">vs 4.2kg avg</div>
+                        </div>
+                        <div class="data-card">
+                          <div class="dc-label">FIFO ratio</div>
+                          <div class="dc-value">0.8</div>
+                          <div class="dc-sub">Below avg</div>
+                        </div>
+                      </div>
+                      <div class="fifo-section">
+                        <div class="dc-label">Wild fish per kg farmed</div>
+                        <div class="fifo-bar-track">
+                          <div class="fifo-bar-fill" style="width:27%"></div>
+                        </div>
+                        <div class="fifo-labels">
+                          <span>0.0</span><span>avg 1.2</span><span>3.0</span>
+                        </div>
+                      </div>
+                      <div class="screen-section-heading">Production journey</div>
+                      <div class="journey">
+                        <div class="journey-step"><div class="journey-dot past"></div><div class="journey-label">Farm</div></div>
+                        <div class="journey-step"><div class="journey-dot past"></div><div class="journey-label">Harvest</div></div>
+                        <div class="journey-step"><div class="journey-dot"></div><div class="journey-label">Processing</div></div>
+                        <div class="journey-step"><div class="journey-dot"></div><div class="journey-label">You</div></div>
+                      </div>
+                      <div class="data-row">
+                        <div class="data-card">
+                          <div class="dc-label">Welfare</div>
+                          <div class="dc-value" style="font-size:10px">ASC Certified</div>
+                        </div>
+                        <div class="data-card">
+                          <div class="dc-label">Stocking</div>
+                          <div class="dc-value" style="font-size:10px">18kg/m3</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="screen-source">Producer data. Verified by Blue.</div>
+                  </div>
+                </div>
+                <p class="phone-label">Environmental data</p>
+              </div>
+
+              <!-- Screen 3: Farm Story -->
+              <div>
+                <div class="phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="screen-nav">
+                      <span class="nav-logo">Blue<span>.</span></span>
+                      <span class="nav-back">Product</span>
+                    </div>
+                    <div class="screen-body" style="padding-top: 10px;">
+                      <div class="farm-section">
+                        <div class="farm-img-placeholder">
+                          <span class="farm-img-label">Farm video / photo gallery</span>
+                        </div>
+                        <div class="farm-body">
+                          <div class="farm-name">Fjord Harvest AS</div>
+                          <div class="farm-location">Tromso, Norway</div>
+                          <div class="farm-quote">"We've farmed this coastline for 26 years. The water here is the coldest and cleanest in the region."</div>
+                        </div>
+                      </div>
+                      <div class="screen-section-heading">Farm location</div>
+                      <div class="map-placeholder">
+                        <div class="map-pin"></div>
+                        <div class="map-label">Fjord Harvest. Tromso, Norway</div>
+                      </div>
+                      <div class="screen-section-heading">Certifications</div>
+                      <div class="cert-row">
+                        <span class="cert-pill">ASC</span>
+                        <span class="cert-pill">GlobalG.A.P.</span>
+                        <span class="cert-pill">IFFO RS</span>
+                      </div>
+                    </div>
+                    <div class="screen-source">Producer data. Verified by Blue.</div>
+                  </div>
+                </div>
+                <p class="phone-label">Farm story</p>
+              </div>
+
+            </div>
           </div>
-          <div class="mockup">
-            <div class="mockup__frame">BluePrint + BlueScore</div>
-            <p class="mockup__caption">Everything in BluePrint plus a verified A-F rating on the pack. One clear signal that tells consumers how your fish was farmed.</p>
+
+          <!-- Flow 2: BluePrint + BlueScore -->
+          <div class="flow">
+            <div class="flow-label">
+              <div class="flow-name">BluePrint + BlueScore</div>
+              <div class="flow-desc">Full data plus verified A-F rating.</div>
+            </div>
+            <div class="phone-row">
+
+              <!-- Screen 1: Product + Score -->
+              <div>
+                <div class="phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="screen-nav">
+                      <span class="nav-logo">Blue<span>.</span></span>
+                      <span class="nav-back">Back</span>
+                    </div>
+                    <div class="screen-hero" style="background: linear-gradient(160deg, #0C3260 0%, #1565A8 100%); padding-bottom: 10px;">
+                      <div class="hero-eyebrow">BlueScore</div>
+                      <div style="display:flex; align-items:center; gap:10px; margin-bottom:4px;">
+                        <div style="width:44px; height:44px; border-radius:10px; background:#2E9E72; display:flex; align-items:center; justify-content:center; font-family:'Nunito Sans',sans-serif; font-weight:800; font-size:26px; color:white; flex-shrink:0;">B</div>
+                        <div>
+                          <div class="hero-title">Salmon Fillet 400g</div>
+                          <div class="hero-sub">Fjord Harvest AS. Tromso, Norway</div>
+                        </div>
+                      </div>
+                      <div class="verified-pill">
+                        <div class="verified-dot"></div>
+                        Verified by Blue
+                      </div>
+                    </div>
+                    <div class="score-status-bar score-b">GOOD. Score 77/100</div>
+                    <div class="screen-body">
+                      <div class="score-cats">
+                        <div class="score-cat"><div class="cat-label">Feed impact</div><div class="cat-bar"><div class="cat-fill" style="width:80%; background:#2E9E72;"></div></div><div class="cat-grade" style="color:#2E9E72;">B</div></div>
+                        <div class="score-cat"><div class="cat-label">Emissions</div><div class="cat-bar"><div class="cat-fill" style="width:65%; background:#C49B00;"></div></div><div class="cat-grade" style="color:#C49B00;">C</div></div>
+                        <div class="score-cat"><div class="cat-label">Stock status</div><div class="cat-bar"><div class="cat-fill" style="width:80%; background:#2E9E72;"></div></div><div class="cat-grade" style="color:#2E9E72;">B</div></div>
+                        <div class="score-cat"><div class="cat-label">Welfare</div><div class="cat-bar"><div class="cat-fill" style="width:80%; background:#2E9E72;"></div></div><div class="cat-grade" style="color:#2E9E72;">B</div></div>
+                        <div class="score-cat"><div class="cat-label">Farming</div><div class="cat-bar"><div class="cat-fill" style="width:65%; background:#C49B00;"></div></div><div class="cat-grade" style="color:#C49B00;">C</div></div>
+                      </div>
+                      <div class="screen-cta-btn">See full breakdown</div>
+                    </div>
+                    <div class="screen-source">Producer data. Verified by Blue.</div>
+                  </div>
+                </div>
+                <p class="phone-label">Product + score</p>
+              </div>
+
+              <!-- Screen 2: Score Breakdown -->
+              <div>
+                <div class="phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="screen-nav">
+                      <span class="nav-logo">Blue<span>.</span></span>
+                      <span class="nav-back">Score</span>
+                    </div>
+                    <div class="screen-body" style="padding-top: 10px;">
+                      <div class="screen-section-heading">Score breakdown</div>
+                      <div class="sb-card"><div class="sb-grade score-b">B</div><div class="sb-info"><div class="sb-label">Feed impact</div><div class="sb-sub">FIFO 0.8. 48% byproduct. IFFO RS</div></div><div class="sb-pct">30%</div></div>
+                      <div class="sb-card"><div class="sb-grade score-c">C</div><div class="sb-info"><div class="sb-label">Emissions</div><div class="sb-sub">3.1kg CO2e/kg. Near category avg</div></div><div class="sb-pct">25%</div></div>
+                      <div class="sb-card"><div class="sb-grade score-b">B</div><div class="sb-info"><div class="sb-label">Stock status</div><div class="sb-sub">Not overfished. ICES 2024</div></div><div class="sb-pct">20%</div></div>
+                      <div class="sb-card"><div class="sb-grade score-b">B</div><div class="sb-info"><div class="sb-label">Animal welfare</div><div class="sb-sub">ASC certified. 18kg/m3</div></div><div class="sb-pct">15%</div></div>
+                      <div class="sb-card"><div class="sb-grade score-c">C</div><div class="sb-info"><div class="sb-label">Farming method</div><div class="sb-sub">Net pen. Open fjord</div></div><div class="sb-pct">10%</div></div>
+                      <div class="screen-section-heading" style="margin-top: 10px;">A-F scale</div>
+                      <div class="af-scale">
+                        <div class="af-item" style="background:#4A9ED6;">A</div>
+                        <div class="af-item active" style="background:#2E9E72;">B</div>
+                        <div class="af-item" style="background:#C49B00;">C</div>
+                        <div class="af-item" style="background:#C4521A;">D</div>
+                        <div class="af-item" style="background:#A02020;">F</div>
+                      </div>
+                    </div>
+                    <div class="screen-source">Producer data. Verified by Blue.</div>
+                  </div>
+                </div>
+                <p class="phone-label">Score breakdown</p>
+              </div>
+
+              <!-- Screen 3: Feed Detail -->
+              <div>
+                <div class="phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="screen-nav">
+                      <span class="nav-logo">Blue<span>.</span></span>
+                      <span class="nav-back">Breakdown</span>
+                    </div>
+                    <div class="screen-body" style="padding-top: 10px;">
+                      <div class="score-badge-screen">
+                        <div class="score-letter-sm score-b">B</div>
+                        <div class="score-info">
+                          <div class="score-label">Feed impact. Grade B</div>
+                          <div class="score-sub">30% of total BlueScore</div>
+                        </div>
+                      </div>
+                      <div class="screen-section-heading">Feed detail</div>
+                      <div class="data-row">
+                        <div class="data-card">
+                          <div class="dc-label">FIFO ratio</div>
+                          <div class="dc-value">0.8</div>
+                          <div class="dc-sub">Grade B threshold</div>
+                        </div>
+                        <div class="data-card">
+                          <div class="dc-label">Byproduct</div>
+                          <div class="dc-value">48%</div>
+                          <div class="dc-sub">Above 40% = B</div>
+                        </div>
+                      </div>
+                      <div class="data-card" style="margin-bottom: 8px;">
+                        <div class="dc-label">Feed certification</div>
+                        <div class="dc-value" style="font-size:10px">IFFO RS Certified</div>
+                        <div class="dc-sub">International fishmeal and fish oil standard</div>
+                      </div>
+                      <div class="data-card" style="margin-bottom: 8px;">
+                        <div class="dc-label">What this means</div>
+                        <div style="font-size:9px; color:#1A1A2E; margin-top:3px; line-height:1.5;">Less than 1kg of wild fish was used to produce 1kg of farmed salmon. 48% of fish ingredients came from processing byproducts.</div>
+                      </div>
+                      <div class="screen-cta-btn">Trace the Blue.</div>
+                    </div>
+                    <div class="screen-source">Producer data. Verified by Blue.</div>
+                  </div>
+                </div>
+                <p class="phone-label">Feed detail + score</p>
+              </div>
+
+            </div>
           </div>
+
         </div>
       </div>
     </section>
