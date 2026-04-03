@@ -59,6 +59,28 @@
     });
   }
 
+  // --- Scroll reveal ---
+  var reveals = document.querySelectorAll('.card, .data-layer, .product-block, .stat, .mockup, .timeline__step, .pricing-card, .faq__item');
+  if (reveals.length > 0 && 'IntersectionObserver' in window) {
+    for (var r = 0; r < reveals.length; r++) {
+      reveals[r].style.opacity = '0';
+      reveals[r].style.transform = 'translateY(20px)';
+      reveals[r].style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      for (var e = 0; e < entries.length; e++) {
+        if (entries[e].isIntersecting) {
+          entries[e].target.style.opacity = '1';
+          entries[e].target.style.transform = 'translateY(0)';
+          observer.unobserve(entries[e].target);
+        }
+      }
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    for (var s = 0; s < reveals.length; s++) {
+      observer.observe(reveals[s]);
+    }
+  }
+
   // --- Contact form handling ---
   var form = document.querySelector('#contact-form');
   if (form) {
