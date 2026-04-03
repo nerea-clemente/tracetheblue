@@ -230,7 +230,7 @@
       color: var(--dark);
       width: 110px;
       flex-shrink: 0;
-      font-weight: 600;
+      font-weight: 400;
     }
 
     .score-cat .cat-bar {
@@ -736,6 +736,26 @@
       </div>
     </div>
 
+    <!-- Score by category (right after certs) -->
+    <div class="app-section">
+      <div class="app-section-title">Score by category</div>
+      <div class="score-cats">
+        <div class="score-cat"><div class="cat-label">Feed impact</div><div class="cat-bar"><div class="cat-fill" style="width:80%; background: var(--score-b);"></div></div><div class="cat-grade" style="color: var(--score-b);">B</div></div>
+        <div class="score-cat"><div class="cat-label">Emissions</div><div class="cat-bar"><div class="cat-fill" style="width:65%; background: var(--score-c);"></div></div><div class="cat-grade" style="color: var(--score-c);">C</div></div>
+        <div class="score-cat"><div class="cat-label">Stock status</div><div class="cat-bar"><div class="cat-fill" style="width:85%; background: var(--score-a);"></div></div><div class="cat-grade" style="color: var(--score-a);">A</div></div>
+        <div class="score-cat"><div class="cat-label">Animal welfare</div><div class="cat-bar"><div class="cat-fill" style="width:80%; background: var(--score-b);"></div></div><div class="cat-grade" style="color: var(--score-b);">B</div></div>
+        <div class="score-cat"><div class="cat-label">Farming method</div><div class="cat-bar"><div class="cat-fill" style="width:65%; background: var(--score-c);"></div></div><div class="cat-grade" style="color: var(--score-c);">C</div></div>
+      </div>
+      <div class="af-scale">
+        <div class="af-item" style="background: var(--score-a);">A</div>
+        <div class="af-item active" style="background: var(--score-b);">B</div>
+        <div class="af-item" style="background: var(--score-c);">C</div>
+        <div class="af-item" style="background: var(--score-d);">D</div>
+        <div class="af-item" style="background: var(--score-f);">F</div>
+      </div>
+      <a href="#score-breakdown" style="display:block; text-align:center; margin-top:16px; background:var(--cyan); color:var(--white); border-radius:20px; padding:10px 20px; font-family:'Nunito Sans',sans-serif; font-weight:700; font-size:0.875rem; text-decoration:none;">See the full breakdown</a>
+    </div>
+
     <!-- Farm story -->
     <div class="app-section">
       <div class="app-section-title">The farm</div>
@@ -747,9 +767,7 @@
         <div class="app-farm-body">
           <div class="app-farm-name">Nordfjord Aquaculture</div>
           <div class="app-farm-location">Senja, Northern Norway. Farming since 1998.</div>
-          <div class="app-farm-quote">
-            "We've farmed this coastline for 26 years. The water here is the coldest and cleanest in the region. Every fish that leaves our farm is raised to the same standard our grandfather set."
-          </div>
+          <div class="app-farm-quote">"We've farmed this coastline for 26 years. The water here is the coldest and cleanest in the region. Every fish that leaves our farm is raised to the same standard our grandfather set."</div>
           <div class="app-farm-attr">Lars M., Farm Manager</div>
         </div>
       </div>
@@ -769,226 +787,142 @@
     <div class="app-section">
       <div class="app-section-title">Production journey</div>
       <div class="app-journey">
-        <div class="app-journey-step">
-          <div class="app-journey-dot done"></div>
-          <div class="app-journey-label">Farm</div>
-          <div class="app-journey-date">Senja, Norway</div>
-        </div>
-        <div class="app-journey-step">
-          <div class="app-journey-dot done"></div>
-          <div class="app-journey-label">Harvest</div>
-          <div class="app-journey-date">Senja, Norway</div>
-        </div>
-        <div class="app-journey-step">
-          <div class="app-journey-dot done"></div>
-          <div class="app-journey-label">Processing</div>
-          <div class="app-journey-date">Finnsnes, Norway</div>
-        </div>
-        <div class="app-journey-step">
-          <div class="app-journey-dot done"></div>
-          <div class="app-journey-label">Distribution</div>
-          <div class="app-journey-date">Oslo, Norway</div>
-        </div>
-        <div class="app-journey-step">
-          <div class="app-journey-dot current"></div>
-          <div class="app-journey-label">You</div>
-          <div class="app-journey-date">Right here</div>
-        </div>
+        <div class="app-journey-step"><div class="app-journey-dot done"></div><div class="app-journey-label">Farm</div><div class="app-journey-date">Senja, Norway</div></div>
+        <div class="app-journey-step"><div class="app-journey-dot done"></div><div class="app-journey-label">Harvest</div><div class="app-journey-date">Senja, Norway</div></div>
+        <div class="app-journey-step"><div class="app-journey-dot done"></div><div class="app-journey-label">Processing</div><div class="app-journey-date">Finnsnes, Norway</div></div>
+        <div class="app-journey-step"><div class="app-journey-dot done"></div><div class="app-journey-label">Distribution</div><div class="app-journey-date">Oslo, Norway</div></div>
+        <div class="app-journey-step"><div class="app-journey-dot current"></div><div class="app-journey-label">You</div><div class="app-journey-date">Right here</div></div>
       </div>
       <div class="app-data-grid">
-        <div class="app-data-card">
-          <div class="app-data-label">Processing location</div>
-          <div class="app-data-value sm">Finnsnes, Norway</div>
-          <div class="app-data-sub">Fresh filleted</div>
-        </div>
-        <div class="app-data-card">
-          <div class="app-data-label">Farm to shelf</div>
-          <div class="app-data-value sm">Typically 3-5 days</div>
-          <div class="app-data-sub">Chilled throughout</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Category scores -->
-    <div class="app-section">
-      <div class="app-section-title">Score by category</div>
-      <div class="score-cats">
-        <div class="score-cat">
-          <div class="cat-label">Feed impact</div>
-          <div class="cat-bar"><div class="cat-fill" style="width:80%; background: var(--score-b);"></div></div>
-          <div class="cat-grade" style="color: var(--score-b);">B</div>
-        </div>
-        <div class="score-cat">
-          <div class="cat-label">Emissions</div>
-          <div class="cat-bar"><div class="cat-fill" style="width:65%; background: var(--score-c);"></div></div>
-          <div class="cat-grade" style="color: var(--score-c);">C</div>
-        </div>
-        <div class="score-cat">
-          <div class="cat-label">Stock status</div>
-          <div class="cat-bar"><div class="cat-fill" style="width:85%; background: var(--score-a);"></div></div>
-          <div class="cat-grade" style="color: var(--score-a);">A</div>
-        </div>
-        <div class="score-cat">
-          <div class="cat-label">Animal welfare</div>
-          <div class="cat-bar"><div class="cat-fill" style="width:80%; background: var(--score-b);"></div></div>
-          <div class="cat-grade" style="color: var(--score-b);">B</div>
-        </div>
-        <div class="score-cat">
-          <div class="cat-label">Farming method</div>
-          <div class="cat-bar"><div class="cat-fill" style="width:65%; background: var(--score-c);"></div></div>
-          <div class="cat-grade" style="color: var(--score-c);">C</div>
-        </div>
-      </div>
-
-      <div class="af-scale">
-        <div class="af-item" style="background: var(--score-a);">A</div>
-        <div class="af-item active" style="background: var(--score-b);">B</div>
-        <div class="af-item" style="background: var(--score-c);">C</div>
-        <div class="af-item" style="background: var(--score-d);">D</div>
-        <div class="af-item" style="background: var(--score-f);">F</div>
+        <div class="app-data-card"><div class="app-data-label">Processing location</div><div class="app-data-value sm">Finnsnes, Norway</div><div class="app-data-sub">Fresh filleted</div></div>
+        <div class="app-data-card"><div class="app-data-label">Farm to shelf</div><div class="app-data-value sm">Typically 3-5 days</div><div class="app-data-sub">Chilled throughout</div></div>
       </div>
     </div>
 
     <!-- Score breakdown -->
-    <div class="app-section">
+    <div class="app-section" id="score-breakdown">
       <div class="app-section-title">Score breakdown</div>
 
-      <div class="breakdown-card">
-        <div class="breakdown-header">
-          <div class="breakdown-grade" style="background: var(--score-b);">B</div>
-          <div>
-            <div class="breakdown-title">Feed impact</div>
-            <div class="breakdown-sub">FIFO 0.8 / 48% byproduct use / IFFO RS certified</div>
+      <a href="#section-feed-impact" style="text-decoration:none; color:inherit;">
+        <div class="breakdown-card">
+          <div class="breakdown-header">
+            <div class="breakdown-grade" style="background: var(--score-b);">B</div>
+            <div><div class="breakdown-title">Feed impact</div><div class="breakdown-sub">FIFO 0.8 / 48% byproduct use / IFFO RS certified</div></div>
           </div>
+          <p class="breakdown-detail">Less than 1 kg of wild fish used per kg of farmed salmon. Nearly half of feed ingredients come from processing byproducts rather than dedicated wild catch.</p>
         </div>
-        <p class="breakdown-detail">Less than 1 kg of wild fish used per kg of farmed salmon. Nearly half of feed ingredients come from processing byproducts rather than dedicated wild catch.</p>
-      </div>
+      </a>
 
-      <div class="breakdown-card">
-        <div class="breakdown-header">
-          <div class="breakdown-grade" style="background: var(--score-c);">C</div>
-          <div>
-            <div class="breakdown-title">Emissions</div>
-            <div class="breakdown-sub">3.1 kg CO2e per kg / Near category average</div>
+      <a href="#section-emissions" style="text-decoration:none; color:inherit;">
+        <div class="breakdown-card">
+          <div class="breakdown-header">
+            <div class="breakdown-grade" style="background: var(--score-c);">C</div>
+            <div><div class="breakdown-title">Emissions</div><div class="breakdown-sub">3.1 kg CO2e per kg / Near category average</div></div>
           </div>
+          <p class="breakdown-detail">Carbon footprint is close to the category average of 4.2 kg CO2e. Below average but with room for improvement through feed sourcing and energy transition.</p>
         </div>
-        <p class="breakdown-detail">Carbon footprint is close to the category average of 4.2 kg CO2e. Below average but with room for improvement through feed sourcing and energy transition.</p>
-      </div>
+      </a>
 
-      <div class="breakdown-card">
-        <div class="breakdown-header">
-          <div class="breakdown-grade" style="background: var(--score-a);">A</div>
-          <div>
-            <div class="breakdown-title">Stock status</div>
-            <div class="breakdown-sub">Not overfished / ICES assessment</div>
+      <a href="#section-stock-status" style="text-decoration:none; color:inherit;">
+        <div class="breakdown-card">
+          <div class="breakdown-header">
+            <div class="breakdown-grade" style="background: var(--score-a);">A</div>
+            <div><div class="breakdown-title">Stock status</div><div class="breakdown-sub">Not overfished / ICES assessment</div></div>
           </div>
+          <p class="breakdown-detail">Atlantic salmon is not a wild-caught species. Broodstock management follows certified hatchery protocols. No pressure on wild populations from this product.</p>
         </div>
-        <p class="breakdown-detail">Atlantic salmon is not a wild-caught species. Broodstock management follows certified hatchery protocols. No pressure on wild populations from this product.</p>
-      </div>
+      </a>
 
-      <div class="breakdown-card">
-        <div class="breakdown-header">
-          <div class="breakdown-grade" style="background: var(--score-b);">B</div>
-          <div>
-            <div class="breakdown-title">Animal welfare</div>
-            <div class="breakdown-sub">ASC certified / 18 kg/m3 stocking density</div>
+      <a href="#section-animal-welfare" style="text-decoration:none; color:inherit;">
+        <div class="breakdown-card">
+          <div class="breakdown-header">
+            <div class="breakdown-grade" style="background: var(--score-b);">B</div>
+            <div><div class="breakdown-title">Animal welfare</div><div class="breakdown-sub">ASC certified / 18 kg/m3 stocking density</div></div>
           </div>
+          <p class="breakdown-detail">Stocking density is well below ASC maximum of 25 kg/m3. Zero antibiotic use as farm policy. 4.2% annual mortality rate, below industry average of 6.1%.</p>
         </div>
-        <p class="breakdown-detail">Stocking density is well below ASC maximum of 25 kg/m3. Zero antibiotic use as farm policy. 4.2% annual mortality rate, below industry average of 6.1%.</p>
-      </div>
+      </a>
 
-      <div class="breakdown-card">
-        <div class="breakdown-header">
-          <div class="breakdown-grade" style="background: var(--score-c);">C</div>
-          <div>
-            <div class="breakdown-title">Farming method</div>
-            <div class="breakdown-sub">Open net pen / Fjord environment</div>
+      <a href="#section-farming-method" style="text-decoration:none; color:inherit;">
+        <div class="breakdown-card">
+          <div class="breakdown-header">
+            <div class="breakdown-grade" style="background: var(--score-c);">C</div>
+            <div><div class="breakdown-title">Farming method</div><div class="breakdown-sub">Open net pen / Fjord environment</div></div>
           </div>
+          <p class="breakdown-detail">Open net pen farming in a fjord environment. Strong tidal current provides natural water exchange. Method is standard for the region but carries inherent environmental interaction.</p>
         </div>
-        <p class="breakdown-detail">Open net pen farming in a fjord environment. Strong tidal current provides natural water exchange. Method is standard for the region but carries inherent environmental interaction.</p>
-      </div>
+      </a>
     </div>
 
-    <!-- Environmental data -->
-    <div class="app-section">
-      <div class="app-section-title">Environmental impact</div>
-      <h2>Carbon footprint</h2>
-      <div class="app-data-card full" style="margin-bottom: 16px;">
+    <!-- Feed impact (was Feed sourcing) -->
+    <div class="app-section" id="section-feed-impact">
+      <div class="app-section-title">Feed impact</div>
+      <div class="app-data-grid">
+        <div class="app-data-card"><div class="app-data-label">FIFO ratio</div><div class="app-data-value">0.8</div><div class="app-data-sub">Below industry avg</div></div>
+        <div class="app-data-card"><div class="app-data-label">Byproduct use</div><div class="app-data-value">48%</div><div class="app-data-sub">Of feed ingredients</div></div>
+      </div>
+      <div class="app-data-card full" style="margin-bottom: 12px;">
+        <div class="app-data-label">Wild fish used per kg farmed</div>
+        <div class="app-fifo-track">
+          <div class="app-fifo-fill" style="width: 27%;"></div>
+        </div>
+        <div class="app-fifo-labels"><span>0.0 (best)</span><span>Avg 1.2</span><span>3.0</span></div>
+        <div class="app-fifo-result">0.8 - Below industry average</div>
+      </div>
+      <div class="app-data-card full" style="margin-bottom: 12px;">
+        <div class="app-data-label">Feed certification</div>
+        <div class="app-data-value sm">IFFO RS Certified</div>
+        <div class="app-data-sub">International fishmeal and fish oil organisation. Responsible supply standard.</div>
+      </div>
+      <div class="app-explainer">A FIFO ratio of 0.8 means less than 1 kg of wild fish was used to produce 1 kg of farmed salmon. 48% of feed ingredients came from processing byproducts.</div>
+    </div>
+
+    <!-- Emissions -->
+    <div class="app-section" id="section-emissions">
+      <div class="app-section-title">Emissions</div>
+      <div class="app-data-card full" style="margin-bottom: 12px;">
         <div class="app-data-label">CO2e per kg produced</div>
         <div class="app-data-value">3.1 kg</div>
         <div class="app-progress">
           <div class="app-progress-fill" style="width: 62%;"></div>
         </div>
-        <div class="app-progress-labels">
-          <span>This product: 3.1 kg</span>
-          <span>Category avg: 4.2 kg</span>
-        </div>
+        <div class="app-progress-labels"><span>This product: 3.1 kg</span><span>Category avg: 4.2 kg</span></div>
       </div>
-
-      <h2>Feed dependency (FIFO)</h2>
-      <div class="app-data-card full">
-        <div class="app-data-label">Wild fish used per kg farmed</div>
-        <div class="app-fifo-track">
-          <div class="app-fifo-fill" style="width: 27%;"></div>
-        </div>
-        <div class="app-fifo-labels">
-          <span>0.0 (best)</span>
-          <span>Avg 1.2</span>
-          <span>3.0</span>
-        </div>
-        <div class="app-fifo-result">0.8 - Below industry average</div>
-      </div>
-
-      <div class="app-explainer" style="margin-top: 12px;">
-        A FIFO ratio of 0.8 means less than 1 kg of wild fish was used to produce 1 kg of farmed salmon. 48% of feed ingredients came from processing byproducts.
-      </div>
+      <div class="app-explainer">Carbon footprint is close to the category average of 4.2 kg CO2e. Below average but with room for improvement through feed sourcing and energy transition.</div>
     </div>
 
-    <!-- Welfare -->
-    <div class="app-section">
+    <!-- Stock status -->
+    <div class="app-section" id="section-stock-status">
+      <div class="app-section-title">Stock status</div>
+      <div class="app-data-grid">
+        <div class="app-data-card full">
+          <div class="app-data-label">Wild stock assessment</div>
+          <div class="app-data-value sm" style="color: var(--teal);">Not overfished</div>
+          <div class="app-data-sub">ICES assessment / North Atlantic</div>
+        </div>
+      </div>
+      <div class="app-explainer" style="margin-top: 12px;">Atlantic salmon is not a wild-caught species. Broodstock management follows certified hatchery protocols. No pressure on wild populations from this product.</div>
+    </div>
+
+    <!-- Animal welfare -->
+    <div class="app-section" id="section-animal-welfare">
       <div class="app-section-title">Animal welfare</div>
       <div class="app-welfare-grid">
-        <div class="app-data-card">
-          <div class="app-data-label">Stocking density</div>
-          <div class="app-data-value">18 kg/m3</div>
-          <div class="app-data-sub">Below ASC max (25)</div>
-        </div>
-        <div class="app-data-card">
-          <div class="app-data-label">Welfare cert</div>
-          <div class="app-data-value sm">ASC Certified</div>
-          <div class="app-data-sub">Annual audit</div>
-        </div>
-        <div class="app-data-card">
-          <div class="app-data-label">Mortality rate</div>
-          <div class="app-data-value">4.2%</div>
-          <div class="app-data-sub">Annual average. vs 6.1% industry avg</div>
-        </div>
-        <div class="app-data-card">
-          <div class="app-data-label">Antibiotic use</div>
-          <div class="app-data-value sm">Zero</div>
-          <div class="app-data-sub">Farm policy. Independently audited annually</div>
-        </div>
+        <div class="app-data-card"><div class="app-data-label">Stocking density</div><div class="app-data-value">18 kg/m3</div><div class="app-data-sub">Below ASC max (25)</div></div>
+        <div class="app-data-card"><div class="app-data-label">Welfare cert</div><div class="app-data-value sm">ASC Certified</div><div class="app-data-sub">Annual audit</div></div>
+        <div class="app-data-card"><div class="app-data-label">Mortality rate</div><div class="app-data-value">4.2%</div><div class="app-data-sub">Annual average. vs 6.1% industry avg</div></div>
+        <div class="app-data-card"><div class="app-data-label">Antibiotic use</div><div class="app-data-value sm">Zero</div><div class="app-data-sub">Farm policy. Independently audited annually</div></div>
       </div>
     </div>
 
-    <!-- Feed sourcing -->
-    <div class="app-section">
-      <div class="app-section-title">Feed sourcing</div>
+    <!-- Farming method -->
+    <div class="app-section" id="section-farming-method">
+      <div class="app-section-title">Farming method</div>
       <div class="app-data-grid">
-        <div class="app-data-card">
-          <div class="app-data-label">FIFO ratio</div>
-          <div class="app-data-value">0.8</div>
-        </div>
-        <div class="app-data-card">
-          <div class="app-data-label">Byproduct use</div>
-          <div class="app-data-value">48%</div>
-        </div>
-        <div class="app-data-card full">
-          <div class="app-data-label">Feed certification</div>
-          <div class="app-data-value sm">IFFO RS Certified</div>
-          <div class="app-data-sub">International fishmeal and fish oil organisation. Responsible supply standard.</div>
-        </div>
+        <div class="app-data-card"><div class="app-data-label">Method</div><div class="app-data-value sm">Open net pen</div><div class="app-data-sub">Standard for Norwegian fjords</div></div>
+        <div class="app-data-card"><div class="app-data-label">Environment</div><div class="app-data-value sm">Fjord</div><div class="app-data-sub">Strong tidal current</div></div>
       </div>
+      <div class="app-explainer" style="margin-top: 12px;">Open net pen farming in a fjord environment. Strong tidal current provides natural water exchange. Method is standard for the region but carries inherent environmental interaction.</div>
     </div>
 
     <!-- Source -->

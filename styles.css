@@ -232,6 +232,8 @@ h3, .h3 {
 
 .nav__cta {
   display: none;
+  font-size: 0.8125rem;
+  padding: 8px 20px;
 }
 
 /* Mobile menu toggle */
