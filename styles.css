@@ -782,17 +782,13 @@ h3, .h3 {
 /* Horizontal scroll on mobile */
 .pricing-scroll {
   display: flex;
+  flex-direction: column;
   gap: 16px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 16px;
 }
 
 .pricing-scroll .pricing-card {
-  min-width: 280px;
-  flex-shrink: 0;
-  scroll-snap-align: start;
+  min-width: auto;
+  width: 100%;
 }
 
 /* --- Add-ons --- */
@@ -1256,19 +1252,15 @@ h3, .h3 {
 /* Phone scroll row */
 .phone-row {
   display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
-/* Each phone column — fixed size */
+/* Each phone column */
 .phone-col {
-  width: 260px;
-  min-width: 260px;
-  flex-shrink: 0;
-  scroll-snap-align: start;
+  width: 100%;
+  max-width: 300px;
 }
 
 /* Phone frame */
@@ -1856,12 +1848,13 @@ h3, .h3 {
   }
 
   .phone-row {
-    overflow-x: visible;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
   }
 
   .phone-col {
     width: 260px;
-    min-width: 260px;
+    max-width: 260px;
   }
 }
