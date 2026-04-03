@@ -1269,7 +1269,17 @@ h3, .h3 {
   background: #F0F7FF;
   border-radius: 20px;
   overflow: hidden;
-  min-height: 420px;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-screen .screen-body {
+  flex: 1;
+}
+
+.phone-screen .screen-source {
+  margin-top: auto;
 }
 
 .phone-label {
