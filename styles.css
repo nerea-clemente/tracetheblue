@@ -1152,7 +1152,7 @@ h3, .h3 {
   /* Pricing */
   .pricing-scroll {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     overflow-x: visible;
     padding-bottom: 0;
