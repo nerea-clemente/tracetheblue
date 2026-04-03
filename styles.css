@@ -1152,13 +1152,18 @@ h3, .h3 {
     padding-bottom: 0;
   }
 
-  .timeline__step:not(:last-child) .timeline__marker::after {
-    top: 50%;
-    left: 100%;
-    transform: translateY(-50%);
-    width: calc(100% - 36px);
+  .timeline__step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: calc(50% + 18px);
+    right: calc(-50% + 18px);
     height: 2px;
-    margin-left: 0;
+    background-color: rgba(74, 158, 214, 0.3);
+  }
+
+  .timeline__step:not(:last-child) .timeline__marker::after {
+    display: none;
   }
 
   /* Pricing */
