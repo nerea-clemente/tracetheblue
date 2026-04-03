@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — Blue.</title>
+  <meta name="description" content="Simple, transparent pricing. A subscription. No setup fees. Cancel anytime.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" aria-label="Blue homepage">
+          <span class="logo-word">Blue<span class="logo-dot">.</span></span>
+        </a>
+        <div class="nav__links">
+          <a href="how-it-works.html" class="nav__link">How it works</a>
+          <a href="pricing.html" class="nav__link nav__link--active">Pricing</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+          <a href="contact.html" class="btn btn--primary nav__cta">Get in touch</a>
+        </div>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" role="menu">
+      <a href="how-it-works.html" class="nav__link" role="menuitem">How it works</a>
+      <a href="pricing.html" class="nav__link nav__link--active" role="menuitem">Pricing</a>
+      <a href="contact.html" class="nav__link" role="menuitem">Contact</a>
+      <a href="contact.html" class="btn btn--primary" role="menuitem">Get in touch</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Pricing</p>
+        <h1>Simple, transparent pricing.</h1>
+        <p class="lead">A subscription. No setup fees. Cancel anytime.</p>
+      </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="section section--white" style="padding-top: 0;">
+      <div class="container">
+        <div class="pricing-scroll">
+
+          <!-- Starter -->
+          <div class="pricing-card">
+            <div class="pricing-card__name">Starter</div>
+            <div class="pricing-card__price">€99<span>/month</span></div>
+            <p class="pricing-card__desc">Best for small independent producers wanting to start with transparency.</p>
+            <ul class="pricing-card__features">
+              <li><span>BluePrint Basic</span><span>Unlimited SKUs</span></li>
+              <li><span>BluePrint Full</span><span>Not included</span></li>
+              <li><span>BlueScore</span><span>Not included</span></li>
+            </ul>
+            <p class="pricing-card__annual">Annual: €990/year</p>
+          </div>
+
+          <!-- Growth (highlighted) -->
+          <div class="pricing-card pricing-card--highlight">
+            <span class="card__badge">Most popular</span>
+            <div class="pricing-card__name">Growth</div>
+            <div class="pricing-card__price">€349<span>/month</span></div>
+            <p class="pricing-card__desc">Best for producers who want full product data on their hero SKUs.</p>
+            <ul class="pricing-card__features">
+              <li><span>BluePrint Basic</span><span>Unlimited SKUs</span></li>
+              <li><span>BluePrint Full</span><span>Up to 5 SKUs</span></li>
+              <li><span>BlueScore</span><span>Not included</span></li>
+              <li><span>Extra Full SKUs</span><span>€49/SKU/month</span></li>
+            </ul>
+            <p class="pricing-card__annual">Annual: €3,490/year</p>
+          </div>
+
+          <!-- Scale -->
+          <div class="pricing-card">
+            <div class="pricing-card__name">Scale</div>
+            <div class="pricing-card__price">€799<span>/month</span></div>
+            <p class="pricing-card__desc">Best for producers who want a verified rating on packaging.</p>
+            <ul class="pricing-card__features">
+              <li><span>BluePrint Basic</span><span>Unlimited SKUs</span></li>
+              <li><span>BluePrint Full</span><span>Up to 20 SKUs</span></li>
+              <li><span>BlueScore</span><span>Up to 5 SKUs</span></li>
+              <li><span>Extra BlueScore</span><span>€79/SKU/month</span></li>
+            </ul>
+            <p class="pricing-card__annual">Annual: €7,990/year</p>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="pricing-card">
+            <div class="pricing-card__name">Enterprise</div>
+            <div class="pricing-card__price">Custom</div>
+            <p class="pricing-card__desc">Large producers, retail integrations, custom contracts.</p>
+            <ul class="pricing-card__features">
+              <li><span>BluePrint Basic</span><span>Unlimited</span></li>
+              <li><span>BluePrint Full</span><span>Unlimited</span></li>
+              <li><span>BlueScore</span><span>Negotiated</span></li>
+              <li><span>Retail API access</span><span>Included</span></li>
+            </ul>
+            <p class="pricing-card__annual"><a href="contact.html" class="link-arrow">Contact us →</a></p>
+          </div>
+
+        </div>
+
+        <!-- Add-ons -->
+        <div class="addons">
+          <p>Additional farm location: +€49/month · Extra BluePrint Full SKU: +€49/month · Extra BlueScore SKU: +€79/month</p>
+        </div>
+
+        <!-- Annual note -->
+        <p class="annual-note">Annual contracts: 10 months for the price of 12. Approximately 17% off. Invoiced upfront.</p>
+      </div>
+    </section>
+
+    <!-- Founding Producer -->
+    <section class="section section--navy">
+      <div class="container text-center">
+        <p class="eyebrow mb-16">Founding Producers</p>
+        <h2 class="mb-24">First three months free for founding producers.</h2>
+        <p class="lead mb-32" style="max-width: 540px; margin-left: auto; margin-right: auto;">No long-term commitment required.</p>
+        <a href="contact.html" class="btn btn--primary">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--white">
+      <div class="container" style="max-width: 720px;">
+        <h2 class="text-center mb-48">Frequently asked questions</h2>
+        <div class="faq">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Can I start with BluePrint Basic and upgrade later?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer" role="region">
+              <p>Yes. Every tier includes everything from the tier below. Upgrading adds new capabilities to your existing setup. Your QR codes stay the same.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>What do I need to provide?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer" role="region">
+              <p>A farm profile (video, photos, location, certifications) and product data for each SKU you want BluePrint Full or BlueScore on. Blue structures, verifies, and writes everything.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>How long does it take to go live?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer" role="region">
+              <p>Starter producers are live in 5–7 days. Growth in 10–14 days. Scale in 14–21 days. The QR code files are delivered ready for your next packaging print run.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <span class="logo-word">Blue<span class="logo-dot">.</span></span>
+          <p class="footer__tagline">Seafood, clearly.</p>
+        </div>
+        <div class="footer__links">
+          <a href="how-it-works.html" class="footer__link">How it works</a>
+          <a href="pricing.html" class="footer__link">Pricing</a>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__contact">
+          <p><a href="mailto:hello@tracetheblue.com">hello@tracetheblue.com</a></p>
+          <p style="margin-top: 8px;">tracetheblue.com</p>
+        </div>
+      </div>
+      <p class="footer__bottom">© 2026 Blue. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

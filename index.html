@@ -1,12 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trace the Blue</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue. — Seafood Transparency Platform</title>
+  <meta name="description" content="Blue turns verified aquaculture data into something consumers can actually see — at the moment they decide what to buy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Trace the Blue</h1>
-    <p>This is the project website for Trace the Blue. Stay tuned for updates!</p>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" aria-label="Blue homepage">
+          <span class="logo-word">Blue<span class="logo-dot">.</span></span>
+        </a>
+        <div class="nav__links">
+          <a href="how-it-works.html" class="nav__link">How it works</a>
+          <a href="pricing.html" class="nav__link">Pricing</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+          <a href="contact.html" class="btn btn--primary nav__cta">Get in touch</a>
+        </div>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" role="menu">
+      <a href="how-it-works.html" class="nav__link" role="menuitem">How it works</a>
+      <a href="pricing.html" class="nav__link" role="menuitem">Pricing</a>
+      <a href="contact.html" class="nav__link" role="menuitem">Contact</a>
+      <a href="contact.html" class="btn btn--primary" role="menuitem">Get in touch</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Seafood Transparency</p>
+        <h1>Your sustainability work deserves to be seen.</h1>
+        <p class="lead">Blue turns verified aquaculture data into something consumers can actually see — at the moment they decide what to buy.</p>
+        <a href="contact.html" class="btn btn--primary">Talk to us</a>
+        <p class="hero__trust">Trusted by aquaculture producers across Europe</p>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section section--navy">
+      <div class="container">
+        <p class="eyebrow mb-16">The Problem</p>
+        <h2 class="mb-48">You've done the work. The consumer can't see it.</h2>
+        <div class="grid grid--3">
+          <div>
+            <div class="icon-placeholder">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </div>
+            <h3 class="mb-8">Invisible at the shelf</h3>
+            <p>ASC certification, FIFO ratios, emissions data. It exists. It just never reaches the consumer.</p>
+          </div>
+          <div>
+            <div class="icon-placeholder">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3 class="mb-8">Certifications without context</h3>
+            <p>An ASC logo on a pack tells consumers almost nothing. Verified data tells them everything.</p>
+          </div>
+          <div>
+            <div class="icon-placeholder">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><line x1="6.5" y1="17" x2="17.5" y2="17"/><line x1="12" y1="14" x2="12" y2="20"/></svg>
+            </div>
+            <h3 class="mb-8">No way to differentiate</h3>
+            <p>Your product and the one next to it look identical. They are not.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Products Section -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="text-center mb-48">
+          <p class="eyebrow mb-16">How It Works</p>
+          <h2>Three products. One clear stack.</h2>
+        </div>
+        <div class="grid grid--3">
+          <div class="card">
+            <h3 class="mb-12">BluePrint Basic</h3>
+            <p>The farm story. Video, photos, map, quote, certifications. QR code on every product. One setup covers your whole range.</p>
+          </div>
+          <div class="card">
+            <h3 class="mb-12">BluePrint Full</h3>
+            <p>The product story. CO₂e per kg, FIFO ratio, feed certification, production journey. Applied to your chosen SKUs.</p>
+          </div>
+          <div class="card">
+            <h3 class="mb-12">BlueScore</h3>
+            <p>The verified rating. A–F on packaging. Like Nutri-Score for how fish was farmed. Calculated from verified data.</p>
+          </div>
+        </div>
+        <div class="text-center mt-32">
+          <a href="how-it-works.html" class="link-arrow">See how it all works →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regulatory Urgency -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="text-center">
+          <p class="eyebrow mb-16">Why Now</p>
+          <h2 class="mb-24">The EU Green Claims Directive changes everything.</h2>
+          <p class="lead" style="max-width: 720px; margin-left: auto; margin-right: auto;">From 2026, every sustainability claim on food packaging must be backed by verified data. Vague claims become illegal. Verified claims become a competitive advantage. Blue is the fastest way to get there.</p>
+        </div>
+        <div class="stat-row">
+          <div class="stat">
+            <span class="stat__number">2026</span>
+            <span class="stat__label">Green Claims enforcement begins</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">€30B</span>
+            <span class="stat__label">European seafood market</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">25 days</span>
+            <span class="stat__label">Average time from sign-up to live</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founding Producer CTA -->
+    <section class="section section--navy">
+      <div class="container text-center">
+        <p class="eyebrow mb-16">Founding Producers</p>
+        <h2 class="mb-24">Be first. Get three months free.</h2>
+        <p class="lead mb-32" style="max-width: 640px; margin-left: auto; margin-right: auto;">We're working with a small cohort of founding producers to build and refine the platform. No cost for the first three months.</p>
+        <a href="contact.html" class="btn btn--primary">Talk to us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <span class="logo-word">Blue<span class="logo-dot">.</span></span>
+          <p class="footer__tagline">Seafood, clearly.</p>
+        </div>
+        <div class="footer__links">
+          <a href="how-it-works.html" class="footer__link">How it works</a>
+          <a href="pricing.html" class="footer__link">Pricing</a>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__contact">
+          <p><a href="mailto:hello@tracetheblue.com">hello@tracetheblue.com</a></p>
+          <p style="margin-top: 8px;">tracetheblue.com</p>
+        </div>
+      </div>
+      <p class="footer__bottom">© 2026 Blue. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

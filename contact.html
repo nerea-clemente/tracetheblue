@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Blue.</title>
+  <meta name="description" content="Tell us about your products. We'll get back to you within one working day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" aria-label="Blue homepage">
+          <span class="logo-word">Blue<span class="logo-dot">.</span></span>
+        </a>
+        <div class="nav__links">
+          <a href="how-it-works.html" class="nav__link">How it works</a>
+          <a href="pricing.html" class="nav__link">Pricing</a>
+          <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+          <a href="contact.html" class="btn btn--primary nav__cta">Get in touch</a>
+        </div>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" role="menu">
+      <a href="how-it-works.html" class="nav__link" role="menuitem">How it works</a>
+      <a href="pricing.html" class="nav__link" role="menuitem">Pricing</a>
+      <a href="contact.html" class="nav__link nav__link--active" role="menuitem">Contact</a>
+      <a href="contact.html" class="btn btn--primary" role="menuitem">Get in touch</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Get In Touch</p>
+        <h1>Let's talk about your products.</h1>
+        <p class="lead">Tell us a little about your operation and we'll get back to you within one working day.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form + Side Panel -->
+    <section class="section section--white" style="padding-top: 0;">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Form -->
+          <div>
+            <form id="contact-form" action="#" method="POST">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="company">Company name</label>
+                <input type="text" id="company" name="company" required autocomplete="organization">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="role">Role</label>
+                <select id="role" name="role" required>
+                  <option value="" disabled selected>Select your role</option>
+                  <option value="sustainability-manager">Sustainability manager</option>
+                  <option value="ceo-md">CEO or MD</option>
+                  <option value="marketing-comms">Marketing or communications</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="species">Species farmed</label>
+                <select id="species" name="species" required>
+                  <option value="" disabled selected>Select species</option>
+                  <option value="salmon">Salmon</option>
+                  <option value="sea-bass-bream">Sea bass or sea bream</option>
+                  <option value="trout">Trout</option>
+                  <option value="turbot-sole">Turbot or sole</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your products and what you're trying to achieve"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">Send message</button>
+            </form>
+            <p class="mt-24" style="font-size: 0.9375rem; color: #1565A8;">Or email us directly: <a href="mailto:hello@tracetheblue.com" style="color: #4A9ED6; text-decoration: underline; text-underline-offset: 2px;">hello@tracetheblue.com</a></p>
+          </div>
+
+          <!-- Side Panel -->
+          <div class="contact-side">
+            <div class="contact-steps">
+              <h3 class="mb-16">What happens next</h3>
+              <div class="contact-step">
+                <span class="contact-step__num">1</span>
+                <p>We read your message and look at your products.</p>
+              </div>
+              <div class="contact-step">
+                <span class="contact-step__num">2</span>
+                <p>We reply within one working day.</p>
+              </div>
+              <div class="contact-step">
+                <span class="contact-step__num">3</span>
+                <p>We schedule a 20-minute call.</p>
+              </div>
+            </div>
+
+            <div class="founding-box">
+              <h3>Founding producer offer</h3>
+              <p>The first producers to join Blue get three months free. No long-term commitment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <span class="logo-word">Blue<span class="logo-dot">.</span></span>
+          <p class="footer__tagline">Seafood, clearly.</p>
+        </div>
+        <div class="footer__links">
+          <a href="how-it-works.html" class="footer__link">How it works</a>
+          <a href="pricing.html" class="footer__link">Pricing</a>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div class="footer__contact">
+          <p><a href="mailto:hello@tracetheblue.com">hello@tracetheblue.com</a></p>
+          <p style="margin-top: 8px;">tracetheblue.com</p>
+        </div>
+      </div>
+      <p class="footer__bottom">© 2026 Blue. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
