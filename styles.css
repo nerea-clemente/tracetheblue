@@ -168,6 +168,15 @@ h3, .h3 {
   color: #4A9ED6;
 }
 
+.logo-tagline {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #888;
+  margin-left: 6px;
+  letter-spacing: 0.02em;
+}
+
 /* --- Navigation --- */
 .nav {
   position: sticky;
