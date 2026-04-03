@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BluePrint Demo | Blue.</title>
+  <meta name="description" content="See a live BluePrint page. This is what consumers see when they scan your QR code.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0C3260;
+      --mid: #1565A8;
+      --cyan: #4A9ED6;
+      --teal: #5DCAA5;
+      --whisper: #F0F7FF;
+      --white: #FFFFFF;
+      --pale: #C8DFF0;
+      --light: #EAF4FB;
+      --grey: #888;
+      --dark: #1A1A2E;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--whisper);
+      color: var(--navy);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* --- Demo banner --- */
+    .demo-banner {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 10px 16px;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .demo-banner a {
+      color: var(--cyan);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      margin-left: 8px;
+    }
+
+    /* --- App nav --- */
+    .app-nav {
+      background: var(--white);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--pale);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .app-logo {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--navy);
+    }
+
+    .app-logo span { color: var(--cyan); }
+
+    .app-verified {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      color: var(--teal);
+      font-weight: 600;
+    }
+
+    .app-verified-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+    }
+
+    /* --- Container --- */
+    .app-container {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 0 0 64px;
+    }
+
+    /* --- Hero --- */
+    .app-hero {
+      background: linear-gradient(160deg, var(--navy) 0%, var(--mid) 100%);
+      color: var(--white);
+      padding: 32px 20px 28px;
+    }
+
+    .app-hero-eyebrow {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 8px;
+    }
+
+    .app-hero h1 {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 800;
+      font-size: 1.75rem;
+      line-height: 1.15;
+      margin-bottom: 4px;
+    }
+
+    .app-hero-sub {
+      font-size: 0.9375rem;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 12px;
+    }
+
+    .app-hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 0.75rem;
+      color: var(--white);
+    }
+
+    .app-hero-pill .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+    }
+
+    /* --- Sections --- */
+    .app-section {
+      padding: 24px 20px;
+      border-bottom: 1px solid var(--pale);
+    }
+
+    .app-section:last-child {
+      border-bottom: none;
+    }
+
+    .app-section-title {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.6875rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 12px;
+    }
+
+    .app-section h2 {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.125rem;
+      margin-bottom: 12px;
+    }
+
+    /* --- Data grid --- */
+    .app-data-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .app-data-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 14px 16px;
+      border: 1px solid var(--pale);
+    }
+
+    .app-data-card.full {
+      grid-column: 1 / -1;
+    }
+
+    .app-data-label {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 0.625rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 4px;
+    }
+
+    .app-data-value {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--navy);
+      line-height: 1.1;
+    }
+
+    .app-data-value.sm {
+      font-size: 0.9375rem;
+    }
+
+    .app-data-sub {
+      font-size: 0.8125rem;
+      color: var(--grey);
+      margin-top: 2px;
+    }
+
+    /* --- FIFO bar --- */
+    .app-fifo-track {
+      background: var(--pale);
+      border-radius: 6px;
+      height: 8px;
+      margin: 10px 0 6px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .app-fifo-fill {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: var(--teal);
+      border-radius: 6px;
+    }
+
+    .app-fifo-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.6875rem;
+      color: var(--grey);
+    }
+
+    .app-fifo-result {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      color: var(--teal);
+      margin-top: 8px;
+    }
+
+    /* --- Progress bar --- */
+    .app-progress {
+      background: var(--pale);
+      border-radius: 6px;
+      height: 8px;
+      margin: 8px 0 4px;
+      overflow: hidden;
+    }
+
+    .app-progress-fill {
+      height: 100%;
+      background: var(--cyan);
+      border-radius: 6px;
+    }
+
+    .app-progress-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.6875rem;
+      color: var(--grey);
+    }
+
+    /* --- Cert pills --- */
+    .app-certs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .app-cert {
+      background: var(--light);
+      border: 1px solid var(--pale);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 0.8125rem;
+      color: var(--mid);
+      font-weight: 600;
+    }
+
+    /* --- Journey --- */
+    .app-journey {
+      display: flex;
+      align-items: flex-start;
+      margin: 16px 0;
+    }
+
+    .app-journey-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      position: relative;
+    }
+
+    .app-journey-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      width: 100%;
+      height: 2px;
+      background: var(--pale);
+    }
+
+    .app-journey-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--cyan);
+      border: 3px solid var(--white);
+      box-shadow: 0 0 0 1px var(--pale);
+      position: relative;
+      z-index: 1;
+      margin-bottom: 6px;
+    }
+
+    .app-journey-dot.done { background: var(--teal); }
+    .app-journey-dot.current {
+      background: var(--cyan);
+      box-shadow: 0 0 0 1px var(--cyan), 0 0 0 4px rgba(74,158,214,0.2);
+    }
+
+    .app-journey-label {
+      font-size: 0.6875rem;
+      color: var(--grey);
+      text-align: center;
+      line-height: 1.3;
+      font-weight: 600;
+    }
+
+    .app-journey-date {
+      font-size: 0.625rem;
+      color: var(--pale);
+      margin-top: 1px;
+    }
+
+    /* --- Farm card --- */
+    .app-farm-card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--pale);
+      margin-bottom: 16px;
+    }
+
+    .app-farm-img {
+      height: 160px;
+      background: linear-gradient(135deg, #0C4A3A, var(--teal));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .app-farm-img-label {
+      font-size: 0.8125rem;
+      color: rgba(255,255,255,0.5);
+      font-style: italic;
+    }
+
+    .app-farm-play {
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .app-farm-play::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left: 14px solid white;
+      margin-left: 3px;
+    }
+
+    .app-farm-body {
+      padding: 16px;
+    }
+
+    .app-farm-name {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--navy);
+    }
+
+    .app-farm-location {
+      font-size: 0.8125rem;
+      color: var(--grey);
+      margin-top: 2px;
+    }
+
+    .app-farm-quote {
+      font-size: 0.875rem;
+      color: var(--dark);
+      font-style: italic;
+      line-height: 1.5;
+      margin-top: 12px;
+      border-left: 3px solid var(--teal);
+      padding-left: 12px;
+    }
+
+    .app-farm-attr {
+      font-size: 0.75rem;
+      color: var(--grey);
+      margin-top: 6px;
+      padding-left: 12px;
+      font-style: normal;
+    }
+
+    /* --- Map --- */
+    .app-map {
+      height: 180px;
+      background: linear-gradient(160deg, #B8D4E8 0%, #D4E8F5 100%);
+      border-radius: 12px;
+      border: 1px solid var(--pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .app-map-pin {
+      width: 16px;
+      height: 16px;
+      background: var(--cyan);
+      border-radius: 50% 50% 50% 0;
+      transform: rotate(-45deg);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
+
+    .app-map-label {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.75rem;
+      color: var(--mid);
+      background: rgba(255,255,255,0.85);
+      padding: 4px 12px;
+      border-radius: 20px;
+      white-space: nowrap;
+      font-weight: 600;
+    }
+
+    .app-map-coords {
+      font-size: 0.75rem;
+      color: var(--grey);
+      text-align: center;
+      margin-top: 4px;
+    }
+
+    /* --- Source footer --- */
+    .app-source {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.75rem;
+      color: var(--grey);
+      border-top: 1px solid var(--pale);
+    }
+
+    .app-source a {
+      color: var(--cyan);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* --- Explainer block --- */
+    .app-explainer {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 14px 16px;
+      border: 1px solid var(--pale);
+      font-size: 0.8125rem;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* --- Welfare grid --- */
+    .app-welfare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Demo banner -->
+  <div class="demo-banner">
+    This is a demo BluePrint page. <a href="contact.html">Get yours</a>
+  </div>
+
+  <!-- App nav -->
+  <nav class="app-nav">
+    <div class="app-logo">Blue<span>.</span></div>
+    <div class="app-verified">
+      <div class="app-verified-dot"></div>
+      Verified
+    </div>
+  </nav>
+
+  <div class="app-container">
+
+    <!-- Hero -->
+    <div class="app-hero">
+      <div class="app-hero-eyebrow">BluePrint</div>
+      <h1>Atlantic Salmon Fillet 400g</h1>
+      <p class="app-hero-sub">Fishfarming Co. / Tromso, Norway</p>
+      <div class="app-hero-pill">
+        <div class="dot"></div>
+        Verified by Blue. March 2025
+      </div>
+    </div>
+
+    <!-- Quick stats -->
+    <div class="app-section">
+      <div class="app-section-title">At a glance</div>
+      <div class="app-data-grid">
+        <div class="app-data-card">
+          <div class="app-data-label">Species</div>
+          <div class="app-data-value sm">Atlantic Salmon</div>
+          <div class="app-data-sub">Salmo salar</div>
+        </div>
+        <div class="app-data-card">
+          <div class="app-data-label">Method</div>
+          <div class="app-data-value sm">Net pen</div>
+          <div class="app-data-sub">Open fjord</div>
+        </div>
+        <div class="app-data-card">
+          <div class="app-data-label">CO2e per kg</div>
+          <div class="app-data-value">3.1 kg</div>
+          <div class="app-data-sub">vs 4.2 kg category avg</div>
+        </div>
+        <div class="app-data-card">
+          <div class="app-data-label">FIFO ratio</div>
+          <div class="app-data-value">0.8</div>
+          <div class="app-data-sub">Below industry avg</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="app-section">
+      <div class="app-section-title">Certifications</div>
+      <div class="app-certs">
+        <span class="app-cert">ASC Certified</span>
+        <span class="app-cert">GlobalG.A.P.</span>
+        <span class="app-cert">IFFO RS</span>
+        <span class="app-cert">BAP 4-Star</span>
+      </div>
+    </div>
+
+    <!-- Environmental -->
+    <div class="app-section">
+      <div class="app-section-title">Environmental impact</div>
+      <h2>Carbon footprint</h2>
+      <div class="app-data-card full" style="margin-bottom: 16px;">
+        <div class="app-data-label">CO2e per kg produced</div>
+        <div class="app-data-value">3.1 kg</div>
+        <div class="app-progress">
+          <div class="app-progress-fill" style="width: 62%;"></div>
+        </div>
+        <div class="app-progress-labels">
+          <span>This product: 3.1 kg</span>
+          <span>Category avg: 4.2 kg</span>
+        </div>
+      </div>
+
+      <h2>Feed dependency (FIFO)</h2>
+      <div class="app-data-card full">
+        <div class="app-data-label">Wild fish used per kg farmed</div>
+        <div class="app-fifo-track">
+          <div class="app-fifo-fill" style="width: 27%;"></div>
+        </div>
+        <div class="app-fifo-labels">
+          <span>0.0 (best)</span>
+          <span>Avg 1.2</span>
+          <span>3.0</span>
+        </div>
+        <div class="app-fifo-result">0.8 - Below industry average</div>
+      </div>
+
+      <div class="app-explainer" style="margin-top: 12px;">
+        A FIFO ratio of 0.8 means less than 1 kg of wild fish was used to produce 1 kg of farmed salmon. 48% of feed ingredients came from processing byproducts.
+      </div>
+    </div>
+
+    <!-- Welfare -->
+    <div class="app-section">
+      <div class="app-section-title">Animal welfare</div>
+      <div class="app-welfare-grid">
+        <div class="app-data-card">
+          <div class="app-data-label">Stocking density</div>
+          <div class="app-data-value">18 kg/m3</div>
+          <div class="app-data-sub">Below ASC max (25)</div>
+        </div>
+        <div class="app-data-card">
+          <div class="app-data-label">Welfare cert</div>
+          <div class="app-data-value sm">ASC Certified</div>
+          <div class="app-data-sub">Annual audit</div>
+        </div>
+        <div class="app-data-card">
+          <div class="app-data-label">Mortality rate</div>
+          <div class="app-data-value">4.2%</div>
+          <div class="app-data-sub">vs 6.1% industry avg</div>
+        </div>
+        <div class="app-data-card">
+          <div class="app-data-label">Antibiotic use</div>
+          <div class="app-data-value sm">Zero</div>
+          <div class="app-data-sub">Last 24 months</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Production journey -->
+    <div class="app-section">
+      <div class="app-section-title">Production journey</div>
+      <div class="app-journey">
+        <div class="app-journey-step">
+          <div class="app-journey-dot done"></div>
+          <div class="app-journey-label">Farmed</div>
+          <div class="app-journey-date">Tromso</div>
+        </div>
+        <div class="app-journey-step">
+          <div class="app-journey-dot done"></div>
+          <div class="app-journey-label">Harvested</div>
+          <div class="app-journey-date">Jan 2025</div>
+        </div>
+        <div class="app-journey-step">
+          <div class="app-journey-dot done"></div>
+          <div class="app-journey-label">Processed</div>
+          <div class="app-journey-date">Bodo, Norway</div>
+        </div>
+        <div class="app-journey-step">
+          <div class="app-journey-dot current"></div>
+          <div class="app-journey-label">You</div>
+          <div class="app-journey-date">Now</div>
+        </div>
+      </div>
+      <div class="app-data-grid">
+        <div class="app-data-card">
+          <div class="app-data-label">Processing</div>
+          <div class="app-data-value sm">Bodo, Norway</div>
+          <div class="app-data-sub">Fresh filleted</div>
+        </div>
+        <div class="app-data-card">
+          <div class="app-data-label">Harvest date</div>
+          <div class="app-data-value sm">14 Jan 2025</div>
+          <div class="app-data-sub">Batch NOR-2025-0142</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Farm story -->
+    <div class="app-section">
+      <div class="app-section-title">The farm</div>
+      <div class="app-farm-card">
+        <div class="app-farm-img">
+          <div class="app-farm-play"></div>
+          <span class="app-farm-img-label">Farm video</span>
+        </div>
+        <div class="app-farm-body">
+          <div class="app-farm-name">Fishfarming Co.</div>
+          <div class="app-farm-location">Tromso, Northern Norway. Farming since 1998.</div>
+          <div class="app-farm-quote">
+            "We've farmed this coastline for 26 years. The water here is the coldest and cleanest in the region. Every fish that leaves our farm is raised to the same standard our grandfather set."
+          </div>
+          <div class="app-farm-attr">Erik H., Farm Manager</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="app-section">
+      <div class="app-section-title">Farm location</div>
+      <div class="app-map">
+        <div class="app-map-pin"></div>
+        <div class="app-map-label">Fishfarming Co. / Tromso, Norway</div>
+      </div>
+      <div class="app-map-coords">68.4 N, 16.2 E / Open fjord / Strong tidal current / Cold Arctic water</div>
+    </div>
+
+    <!-- Feed sourcing -->
+    <div class="app-section">
+      <div class="app-section-title">Feed sourcing</div>
+      <div class="app-data-grid">
+        <div class="app-data-card">
+          <div class="app-data-label">FIFO ratio</div>
+          <div class="app-data-value">0.8</div>
+        </div>
+        <div class="app-data-card">
+          <div class="app-data-label">Byproduct use</div>
+          <div class="app-data-value">48%</div>
+        </div>
+        <div class="app-data-card full">
+          <div class="app-data-label">Feed certification</div>
+          <div class="app-data-value sm">IFFO RS Certified</div>
+          <div class="app-data-sub">International fishmeal and fish oil organisation. Responsible supply standard.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Source -->
+    <div class="app-source">
+      All data provided by the producer. Structured and verified by Blue.<br>
+      <a href="index.html">tracetheblue.com</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
