@@ -1252,7 +1252,8 @@ h3, .h3 {
   border-radius: 28px;
   padding: 10px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.12);
-  min-width: 260px;
+  width: 280px;
+  min-width: 280px;
   flex-shrink: 0;
   scroll-snap-align: start;
 }
@@ -1269,17 +1270,19 @@ h3, .h3 {
   background: #F0F7FF;
   border-radius: 20px;
   overflow: hidden;
-  min-height: 480px;
+  height: 520px;
   display: flex;
   flex-direction: column;
 }
 
 .phone-screen .screen-body {
   flex: 1;
+  overflow-y: auto;
 }
 
 .phone-screen .screen-source {
   margin-top: auto;
+  flex-shrink: 0;
 }
 
 .phone-label {
@@ -1838,7 +1841,7 @@ h3, .h3 {
   }
 
   .phone {
-    min-width: 240px;
-    max-width: 280px;
+    width: 280px;
+    min-width: 280px;
   }
 }
