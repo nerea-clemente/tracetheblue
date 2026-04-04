@@ -174,9 +174,8 @@ h3, .h3 {
   vertical-align: middle;
 }
 
-.footer .logo-svg {
+.logo-svg--footer {
   height: 20px;
-  filter: brightness(0) invert(1);
 }
 
 .logo-tagline {
