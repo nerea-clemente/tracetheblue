@@ -404,7 +404,7 @@ h3, .h3 {
 }
 
 .hero--image {
-  background: linear-gradient(180deg, rgba(12, 50, 96, 0.6) 0%, rgba(12, 50, 96, 0.6) 100%),
+  background: linear-gradient(180deg, rgba(12, 50, 96, 0.7) 0%, rgba(12, 50, 96, 0.8) 100%),
     url('ed-wingate-PY324VYTNz0-unsplash.jpg') center center / cover no-repeat;
   color: #FFFFFF;
 }
@@ -418,6 +418,24 @@ h3, .h3 {
 }
 
 .hero--image .eyebrow {
+  color: #5DCAA5;
+}
+
+.hero--image-demo {
+  background: linear-gradient(180deg, rgba(12, 50, 96, 0.7) 0%, rgba(12, 50, 96, 0.8) 100%),
+    url('woman-supermarket-beautiful-young-woman-holding-salmon-fish-her-hands.jpg') center 30% / cover no-repeat;
+  color: #FFFFFF;
+}
+
+.hero--image-demo h1 {
+  color: #FFFFFF;
+}
+
+.hero--image-demo .lead {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero--image-demo .eyebrow {
   color: #5DCAA5;
 }
 
