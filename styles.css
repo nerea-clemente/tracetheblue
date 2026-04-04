@@ -125,6 +125,16 @@ h3, .h3 {
   color: #FFFFFF;
 }
 
+.section--navy-image {
+  background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
+    url('Hero-banners-website4.png') center center / cover no-repeat;
+  color: #FFFFFF;
+}
+
+.section--navy-image .eyebrow {
+  color: #5DCAA5;
+}
+
 .section--navy .eyebrow {
   color: #5DCAA5;
 }
@@ -405,7 +415,7 @@ h3, .h3 {
 
 .hero--image {
   background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
-    url('ed-wingate-PY324VYTNz0-unsplash.jpg') center center / cover no-repeat;
+    url('Hero-banners-website5 (1).png') center center / cover no-repeat;
   color: #FFFFFF;
 }
 
@@ -423,7 +433,7 @@ h3, .h3 {
 
 .hero--image-demo {
   background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
-    url('woman-supermarket-beautiful-young-woman-holding-salmon-fish-her-hands.jpg') center 60% / cover no-repeat;
+    url('Hero-banners-website3 (1).png') center center / cover no-repeat;
   color: #FFFFFF;
 }
 
@@ -441,7 +451,7 @@ h3, .h3 {
 
 .hero--image-pricing {
   background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
-    url('bob-brewer-udVjzhI9gXs-unsplash.jpg') center center / cover no-repeat;
+    url('Hero-banners-website2 (1).png') center center / cover no-repeat;
   color: #FFFFFF;
 }
 
@@ -459,7 +469,7 @@ h3, .h3 {
 
 .hero--image-contact {
   background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
-    url('Untitled design.jpg') center center / cover no-repeat;
+    url('Hero-banners-website4.png') center center / cover no-repeat;
   color: #FFFFFF;
 }
 
@@ -477,7 +487,7 @@ h3, .h3 {
 
 .hero--image-hiw {
   background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
-    url('Untitled design (1).jpg') center center / cover no-repeat;
+    url('Hero-banners-website1.png') center center / cover no-repeat;
   color: #FFFFFF;
 }
 
