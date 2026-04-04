@@ -459,7 +459,7 @@ h3, .h3 {
 
 .hero--image-contact {
   background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
-    url('images.jpg') center center / cover no-repeat;
+    url('Untitled design.jpg') center center / cover no-repeat;
   color: #FFFFFF;
 }
 
@@ -472,6 +472,24 @@ h3, .h3 {
 }
 
 .hero--image-contact .eyebrow {
+  color: #5DCAA5;
+}
+
+.hero--image-hiw {
+  background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
+    url('Untitled design (1).jpg') center center / cover no-repeat;
+  color: #FFFFFF;
+}
+
+.hero--image-hiw h1 {
+  color: #FFFFFF;
+}
+
+.hero--image-hiw .lead {
+  color: #FFFFFF;
+}
+
+.hero--image-hiw .eyebrow {
   color: #5DCAA5;
 }
 
@@ -492,6 +510,18 @@ h3, .h3 {
   margin-left: auto;
   margin-right: auto;
   color: #1565A8;
+}
+
+.hero[class*="--image"] .lead {
+  color: #FFFFFF;
+}
+
+.hero[class*="--image"] h1 {
+  color: #FFFFFF;
+}
+
+.hero[class*="--image"] .eyebrow {
+  color: #5DCAA5;
 }
 
 .hero .btn {
