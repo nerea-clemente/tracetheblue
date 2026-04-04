@@ -92,18 +92,40 @@
       btn.textContent = 'Sending…';
       btn.disabled = true;
 
-      // Simulate submission (replace with real endpoint)
-      setTimeout(function () {
-        btn.textContent = 'Message sent';
-        btn.style.backgroundColor = '#5DCAA5';
+      var data = new FormData(form);
 
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function (response) {
+        if (response.ok) {
+          btn.textContent = 'Message sent';
+          btn.style.backgroundColor = '#5DCAA5';
+          form.reset();
+          setTimeout(function () {
+            btn.textContent = originalText;
+            btn.style.backgroundColor = '';
+            btn.disabled = false;
+          }, 3000);
+        } else {
+          btn.textContent = 'Error. Try again.';
+          btn.style.backgroundColor = '#C4521A';
+          setTimeout(function () {
+            btn.textContent = originalText;
+            btn.style.backgroundColor = '';
+            btn.disabled = false;
+          }, 3000);
+        }
+      }).catch(function () {
+        btn.textContent = 'Error. Try again.';
+        btn.style.backgroundColor = '#C4521A';
         setTimeout(function () {
           btn.textContent = originalText;
           btn.style.backgroundColor = '';
           btn.disabled = false;
-          form.reset();
         }, 3000);
-      }, 1000);
+      });
     });
   }
 
