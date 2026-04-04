@@ -93,11 +93,12 @@
       btn.disabled = true;
 
       var data = new FormData(form);
+      data.append('form-name', 'contact');
 
-      fetch(form.action, {
+      fetch('/', {
         method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
+        body: new URLSearchParams(data).toString(),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
       }).then(function (response) {
         if (response.ok) {
           btn.textContent = 'Message sent';
