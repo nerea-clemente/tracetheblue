@@ -168,14 +168,14 @@ h3, .h3 {
 }
 
 .logo-svg {
-  height: 22px;
+  height: 32px;
   width: auto;
   display: inline-block;
   vertical-align: middle;
 }
 
 .logo-svg--footer {
-  height: 20px;
+  height: 28px;
 }
 
 .logo-tagline {
