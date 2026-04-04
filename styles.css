@@ -126,9 +126,11 @@ h3, .h3 {
 }
 
 .section--navy-image {
-  background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
+  background: linear-gradient(180deg, rgba(12, 50, 96, 0.6) 0%, rgba(12, 50, 96, 0.6) 100%),
     url('Hero-banners-website4.png') center center / cover no-repeat;
   color: #FFFFFF;
+  background-size: cover;
+  background-position: center center;
 }
 
 .section--navy-image .eyebrow {
@@ -165,17 +167,15 @@ h3, .h3 {
   grid-template-columns: 1fr;
 }
 
-/* --- Logo --- */
-.logo-word {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 800;
-  font-size: 1.5rem;
-  color: #0C3260;
-  line-height: 1;
+.logo-svg {
+  height: 24px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.logo-dot {
-  color: #4A9ED6;
+.footer .logo-svg {
+  filter: brightness(0) invert(1);
 }
 
 .logo-tagline {
@@ -242,8 +242,8 @@ h3, .h3 {
 
 .nav__cta {
   display: none;
-  font-size: 0.8125rem;
-  padding: 8px 20px;
+  font-size: 0.75rem;
+  padding: 6px 16px;
 }
 
 /* Mobile menu toggle */
