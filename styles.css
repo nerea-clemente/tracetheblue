@@ -404,7 +404,7 @@ h3, .h3 {
 }
 
 .hero--image {
-  background: linear-gradient(180deg, rgba(12, 50, 96, 0.7) 0%, rgba(12, 50, 96, 0.8) 100%),
+  background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
     url('ed-wingate-PY324VYTNz0-unsplash.jpg') center center / cover no-repeat;
   color: #FFFFFF;
 }
@@ -414,7 +414,7 @@ h3, .h3 {
 }
 
 .hero--image .lead {
-  color: rgba(255, 255, 255, 0.8);
+  color: #FFFFFF;
 }
 
 .hero--image .eyebrow {
@@ -422,7 +422,7 @@ h3, .h3 {
 }
 
 .hero--image-demo {
-  background: linear-gradient(180deg, rgba(12, 50, 96, 0.7) 0%, rgba(12, 50, 96, 0.8) 100%),
+  background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
     url('woman-supermarket-beautiful-young-woman-holding-salmon-fish-her-hands.jpg') center 30% / cover no-repeat;
   color: #FFFFFF;
 }
@@ -432,10 +432,46 @@ h3, .h3 {
 }
 
 .hero--image-demo .lead {
-  color: rgba(255, 255, 255, 0.8);
+  color: #FFFFFF;
 }
 
 .hero--image-demo .eyebrow {
+  color: #5DCAA5;
+}
+
+.hero--image-pricing {
+  background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
+    url('bob-brewer-udVjzhI9gXs-unsplash.jpg') center center / cover no-repeat;
+  color: #FFFFFF;
+}
+
+.hero--image-pricing h1 {
+  color: #FFFFFF;
+}
+
+.hero--image-pricing .lead {
+  color: #FFFFFF;
+}
+
+.hero--image-pricing .eyebrow {
+  color: #5DCAA5;
+}
+
+.hero--image-contact {
+  background: linear-gradient(180deg, rgba(12, 50, 96, 0.55) 0%, rgba(12, 50, 96, 0.55) 100%),
+    url('images.jpg') center center / cover no-repeat;
+  color: #FFFFFF;
+}
+
+.hero--image-contact h1 {
+  color: #FFFFFF;
+}
+
+.hero--image-contact .lead {
+  color: #FFFFFF;
+}
+
+.hero--image-contact .eyebrow {
   color: #5DCAA5;
 }
 
