@@ -2,35 +2,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" width="700" height="700">
   <rect width="700" height="700" fill="#FFFFFF"/>
 
-  <!-- Bleed area circle -->
-  <circle cx="350" cy="350" r="350" fill="#F0F7FF"/>
+  <!-- Bleed area -->
+  <circle cx="350" cy="350" r="350" fill="#0C3260"/>
 
-  <!-- Die-cut border -->
-  <circle cx="350" cy="350" r="340" fill="#F0F7FF" stroke="#0C3260" stroke-width="4"/>
+  <!-- Cut border -->
+  <circle cx="350" cy="350" r="344" fill="none" stroke="#4A9ED6" stroke-width="5"/>
 
-  <!-- Fishing hook -->
-  <g transform="translate(400, 130)">
-    <!-- Hook eye (top bar) -->
-    <line x1="-20" y1="0" x2="20" y2="0" stroke="#4A9ED6" stroke-width="14" stroke-linecap="round"/>
+  <!-- Fishing line (dashed, from eye to top-left) -->
+  <line x1="408" y1="88" x2="200" y2="60" stroke="#4A9ED6" stroke-width="3" stroke-dasharray="8 6" opacity="0.5"/>
 
-    <!-- Hook shaft and curve -->
-    <path d="M 0,0 L 0,160 C 0,240 -100,260 -100,200 C -100,160 -60,140 -30,160" fill="none" stroke="#4A9ED6" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Hook eye (oval loop at top) -->
+  <ellipse cx="420" cy="100" rx="24" ry="16" fill="none" stroke="#4A9ED6" stroke-width="14" stroke-linecap="round"/>
 
-    <!-- Bait/lure circles at eye -->
-    <circle cx="0" cy="-20" r="18" fill="#0C3260"/>
-    <circle cx="0" cy="-20" r="10" fill="#4A9ED6"/>
-  </g>
+  <!-- Hook shaft and curve -->
+  <path d="M 420,110 L 420,420 C 420,520 480,560 520,520 C 560,480 560,440 530,420 L 510,410" fill="none" stroke="#4A9ED6" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Text - left side -->
-  <text x="190" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#0C3260">Hooked on</text>
-  <text x="190" y="355" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#4A9ED6">transparency.</text>
+  <!-- Lure/bait at hook tip -->
+  <circle cx="508" cy="408" r="20" fill="#F0F7FF"/>
+  <circle cx="508" cy="408" r="12" fill="#4A9ED6"/>
 
-  <!-- Thin rule -->
-  <line x1="110" y1="380" x2="270" y2="380" stroke="#0C3260" stroke-width="1" opacity="0.2"/>
+  <!-- Text: Hooked on -->
+  <text x="220" y="320" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="#FFFFFF">Hooked on</text>
+
+  <!-- Text: transparency. -->
+  <text x="220" y="368" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#4A9ED6">transparency.</text>
+
+  <!-- Bottom rule -->
+  <line x1="80" y1="580" x2="620" y2="580" stroke="#4A9ED6" stroke-width="1" opacity="0.3"/>
 
   <!-- Blue. wordmark -->
-  <text x="190" y="410" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#0C3260">Blue.</text>
+  <text x="342" y="614" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Blue.</text>
+
+  <!-- Cyan square (the B. mark dot) -->
+  <rect x="388" y="600" width="8" height="8" fill="#4A9ED6"/>
 
   <!-- tracetheblue.com -->
-  <text x="190" y="435" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#1565A8" letter-spacing="1.2">tracetheblue.com</text>
+  <text x="350" y="648" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#4A9ED6" letter-spacing="1.5">tracetheblue.com</text>
 </svg>
