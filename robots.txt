@@ -5,5 +5,9 @@ Disallow: /sticker-05.svg
 Disallow: /sticker-06.svg
 Disallow: /sticker-07.svg
 Disallow: /sticker-08.svg
+Disallow: /sticker-09.svg
+Disallow: /sticker-10.svg
+Disallow: /sticker-11.svg
+Disallow: /sticker-12.svg
 
 Sitemap: https://tracetheblue.com/sitemap.xml

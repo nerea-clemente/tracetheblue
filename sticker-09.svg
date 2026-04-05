@@ -1,0 +1,53 @@
+<!-- Print size: 75mm × 75mm | Bleed: 3mm | Die-cut: Rounded square -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 750" width="750" height="750">
+  <rect width="750" height="750" fill="#FFFFFF"/>
+
+  <!-- Bleed area -->
+  <rect x="0" y="0" width="750" height="750" rx="80" fill="#0C3260"/>
+
+  <!-- Cut border -->
+  <rect x="6" y="6" width="738" height="738" rx="76" fill="none" stroke="#4A9ED6" stroke-width="5"/>
+
+  <!-- Large A-F scale -->
+  <g transform="translate(0, 160)">
+    <rect x="60" y="0" width="120" height="48" rx="8" fill="#4A9ED6"/>
+    <text x="120" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">A</text>
+
+    <rect x="192" y="0" width="120" height="48" rx="8" fill="#5DCAA5"/>
+    <text x="252" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">B</text>
+
+    <rect x="324" y="0" width="120" height="48" rx="8" fill="#C49B00"/>
+    <text x="384" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">C</text>
+
+    <rect x="456" y="0" width="120" height="48" rx="8" fill="#C4521A"/>
+    <text x="516" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">D</text>
+
+    <rect x="588" y="0" width="105" height="48" rx="8" fill="#A02020"/>
+    <text x="640" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">F</text>
+  </g>
+
+  <!-- Main text -->
+  <text x="375" y="320" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700" fill="#FFFFFF">What grade</text>
+  <text x="375" y="385" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700" fill="#FFFFFF">is your fish?</text>
+
+  <!-- Subtext -->
+  <text x="375" y="450" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#4A9ED6">BlueScore. Verified at the shelf.</text>
+
+  <!-- Rule -->
+  <line x1="200" y1="490" x2="550" y2="490" stroke="#4A9ED6" stroke-width="1" opacity="0.3"/>
+
+  <!-- Blue. -->
+  <text x="375" y="530" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">Blue.</text>
+
+  <!-- tracetheblue.com -->
+  <text x="375" y="565" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#4A9ED6" letter-spacing="1.5">tracetheblue.com</text>
+
+  <!-- Small QR placeholder bottom right -->
+  <g transform="translate(590, 610)">
+    <rect x="0" y="0" width="60" height="60" rx="6" fill="#FFFFFF" opacity="0.1"/>
+    <rect x="8" y="8" width="16" height="16" fill="#4A9ED6"/>
+    <rect x="36" y="8" width="16" height="16" fill="#4A9ED6"/>
+    <rect x="8" y="36" width="16" height="16" fill="#4A9ED6"/>
+    <rect x="28" y="28" width="8" height="8" fill="#4A9ED6"/>
+  </g>
+</svg>

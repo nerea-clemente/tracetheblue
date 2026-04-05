@@ -1,0 +1,24 @@
+<!-- Print size: 90mm × 45mm | Bleed: 3mm | Die-cut: Pill / Stadium -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450">
+  <rect width="900" height="450" fill="#FFFFFF"/>
+
+  <!-- Bleed area pill -->
+  <rect x="0" y="0" width="900" height="450" rx="225" fill="#F0F7FF"/>
+
+  <!-- Cut border -->
+  <rect x="6" y="6" width="888" height="438" rx="219" fill="none" stroke="#0C3260" stroke-width="5"/>
+
+  <!-- Three wave lines -->
+  <path d="M 100,140 Q 200,100 300,140 Q 400,180 500,140 Q 600,100 700,140 Q 800,180 850,140" fill="none" stroke="#4A9ED6" stroke-width="3" opacity="0.3"/>
+  <path d="M 80,170 Q 180,130 280,170 Q 380,210 480,170 Q 580,130 680,170 Q 780,210 860,170" fill="none" stroke="#4A9ED6" stroke-width="3" opacity="0.2"/>
+  <path d="M 120,200 Q 220,160 320,200 Q 420,240 520,200 Q 620,160 720,200 Q 820,240 870,200" fill="none" stroke="#4A9ED6" stroke-width="3" opacity="0.15"/>
+
+  <!-- Main text -->
+  <text x="450" y="280" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700" fill="#0C3260">Trace the Blue.</text>
+
+  <!-- Subtext -->
+  <text x="450" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#1565A8">Seafood transparency. From farm to shelf.</text>
+
+  <!-- tracetheblue.com -->
+  <text x="450" y="375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1565A8" opacity="0.6" letter-spacing="2">tracetheblue.com</text>
+</svg>

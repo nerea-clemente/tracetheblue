@@ -1,0 +1,30 @@
+<!-- Print size: 65mm × 65mm | Bleed: 3mm | Die-cut: Circle -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650" width="650" height="650">
+  <rect width="650" height="650" fill="#FFFFFF"/>
+
+  <!-- Bleed area -->
+  <circle cx="325" cy="325" r="325" fill="#FFFFFF"/>
+
+  <!-- Cut border -->
+  <circle cx="325" cy="325" r="319" fill="none" stroke="#0C3260" stroke-width="5"/>
+
+  <!-- Large "B" grade badge -->
+  <rect x="225" y="80" width="200" height="200" rx="40" fill="#5DCAA5"/>
+  <text x="325" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="140" font-weight="700" fill="#FFFFFF">B</text>
+
+  <!-- Text -->
+  <text x="325" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#0C3260">Good fish.</text>
+  <text x="325" y="382" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#0C3260">Verified.</text>
+
+  <!-- Subtext -->
+  <text x="325" y="430" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#1565A8">BlueScore. A-F. On every pack.</text>
+
+  <!-- Rule -->
+  <line x1="175" y1="460" x2="475" y2="460" stroke="#0C3260" stroke-width="1" opacity="0.2"/>
+
+  <!-- Blue. -->
+  <text x="325" y="498" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0C3260">Blue.</text>
+
+  <!-- tracetheblue.com -->
+  <text x="325" y="528" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#1565A8" letter-spacing="1.5">tracetheblue.com</text>
+</svg>
