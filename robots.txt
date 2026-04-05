@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /sticker-preview
+Disallow: /sticker-05.svg
+Disallow: /sticker-06.svg
+Disallow: /sticker-07.svg
+Disallow: /sticker-08.svg
 
 Sitemap: https://tracetheblue.com/sitemap.xml

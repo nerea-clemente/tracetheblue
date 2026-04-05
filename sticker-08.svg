@@ -1,0 +1,36 @@
+<!-- Print size: 70mm × 70mm | Bleed: 3mm | Die-cut: Circle -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" width="700" height="700">
+  <rect width="700" height="700" fill="#FFFFFF"/>
+
+  <!-- Bleed area circle -->
+  <circle cx="350" cy="350" r="350" fill="#F0F7FF"/>
+
+  <!-- Die-cut border -->
+  <circle cx="350" cy="350" r="340" fill="#F0F7FF" stroke="#0C3260" stroke-width="4"/>
+
+  <!-- Fishing hook -->
+  <g transform="translate(400, 130)">
+    <!-- Hook eye (top bar) -->
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#4A9ED6" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- Hook shaft and curve -->
+    <path d="M 0,0 L 0,160 C 0,240 -100,260 -100,200 C -100,160 -60,140 -30,160" fill="none" stroke="#4A9ED6" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Bait/lure circles at eye -->
+    <circle cx="0" cy="-20" r="18" fill="#0C3260"/>
+    <circle cx="0" cy="-20" r="10" fill="#4A9ED6"/>
+  </g>
+
+  <!-- Text - left side -->
+  <text x="190" y="310" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#0C3260">Hooked on</text>
+  <text x="190" y="355" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#4A9ED6">transparency.</text>
+
+  <!-- Thin rule -->
+  <line x1="110" y1="380" x2="270" y2="380" stroke="#0C3260" stroke-width="1" opacity="0.2"/>
+
+  <!-- Blue. wordmark -->
+  <text x="190" y="410" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#0C3260">Blue.</text>
+
+  <!-- tracetheblue.com -->
+  <text x="190" y="435" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#1565A8" letter-spacing="1.2">tracetheblue.com</text>
+</svg>
