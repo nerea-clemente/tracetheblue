@@ -8,12 +8,34 @@
   <!-- Die-cut border -->
   <rect x="6" y="6" width="868" height="488" rx="244" fill="#5DCAA5" stroke="#0C3260" stroke-width="5"/>
 
+  <!-- Left fish - facing right, navy silhouette -->
+  <g transform="translate(130, 230)">
+    <!-- Tail fin -->
+    <path d="M -55,-45 L -100,-80 L -100,80 L -55,45 Z" fill="#0C3260" opacity="0.25"/>
+    <!-- Body -->
+    <path d="M -55,-55 C 0,-85 80,-75 110,-45 C 130,-25 130,25 110,45 C 80,75 0,85 -55,55 C -70,40 -70,-40 -55,-55 Z" fill="#0C3260" opacity="0.25"/>
+    <!-- Eye -->
+    <circle cx="75" cy="-15" r="10" fill="#5DCAA5" opacity="0.6"/>
+    <circle cx="78" cy="-17" r="4" fill="#0C3260" opacity="0.3"/>
+  </g>
+
+  <!-- Right fish - facing left, navy silhouette (mirrored) -->
+  <g transform="translate(750, 230) scale(-1,1)">
+    <!-- Tail fin -->
+    <path d="M -55,-45 L -100,-80 L -100,80 L -55,45 Z" fill="#0C3260" opacity="0.25"/>
+    <!-- Body -->
+    <path d="M -55,-55 C 0,-85 80,-75 110,-45 C 130,-25 130,25 110,45 C 80,75 0,85 -55,55 C -70,40 -70,-40 -55,-55 Z" fill="#0C3260" opacity="0.25"/>
+    <!-- Eye -->
+    <circle cx="75" cy="-15" r="10" fill="#5DCAA5" opacity="0.6"/>
+    <circle cx="78" cy="-17" r="4" fill="#0C3260" opacity="0.3"/>
+  </g>
+
   <!-- Main text: Nothing -->
-  <text x="440" y="220" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#0C3260">Nothing</text>
+  <text x="440" y="215" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="700" fill="#0C3260">Nothing</text>
 
   <!-- Main text: to hide. -->
-  <text x="440" y="320" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#0C3260">to hide.</text>
+  <text x="440" y="305" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="700" fill="#0C3260">to hide.</text>
 
   <!-- Bottom credit -->
-  <text x="440" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#0C3260" opacity="0.55" letter-spacing="1.5">Blue. · tracetheblue.com</text>
+  <text x="440" y="400" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#0C3260" opacity="0.55" letter-spacing="1.5">Blue. · tracetheblue.com</text>
 </svg>

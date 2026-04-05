@@ -19,20 +19,34 @@
   <!-- Inner dashed circle -->
   <circle cx="400" cy="400" r="302" fill="none" stroke="#0C3260" stroke-width="1" stroke-dasharray="6,4" opacity="0.25"/>
 
+  <!-- Fish silhouette - navy, behind text -->
+  <g transform="translate(400, 370)">
+    <!-- Fish body - rounded speech-bubble-like shape facing right -->
+    <path d="M -120,-70 C -60,-100 60,-100 110,-60 C 140,-35 140,35 110,60 C 60,100 -60,100 -120,70 C -140,55 -140,-55 -120,-70 Z" fill="#0C3260" opacity="0.2"/>
+    <!-- Tail fin -->
+    <path d="M -130,-40 L -175,-75 L -175,75 L -130,40 Z" fill="#0C3260" opacity="0.2"/>
+    <!-- Eye -->
+    <circle cx="80" cy="-20" r="12" fill="#4A9ED6" opacity="0.5"/>
+    <circle cx="83" cy="-22" r="5" fill="#0C3260" opacity="0.3"/>
+  </g>
+
   <!-- Main text: Your fish -->
-  <text x="400" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#0C3260">Your fish</text>
+  <text x="400" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="#0C3260">Your fish</text>
 
   <!-- Main text: has a story. -->
-  <text x="400" y="390" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#0C3260">has a story.</text>
+  <text x="400" y="400" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="#0C3260">has a story.</text>
+
+  <!-- Eye accent on the period - small cyan circle -->
+  <circle cx="507" cy="390" r="6" fill="#0C3260"/>
 
   <!-- Horizontal rule -->
-  <line x1="280" y1="418" x2="520" y2="418" stroke="#0C3260" stroke-width="1.5" opacity="0.3"/>
+  <line x1="280" y1="428" x2="520" y2="428" stroke="#0C3260" stroke-width="1.5" opacity="0.3"/>
 
   <!-- Does yours? -->
-  <text x="400" y="460" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-style="italic" fill="#0C3260">Does yours?</text>
+  <text x="400" y="468" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-style="italic" fill="#0C3260">Does yours?</text>
 
   <!-- Blue. wordmark -->
-  <text x="370" y="560" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0C3260">Blue.</text>
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0C3260">Blue.</text>
 
   <!-- tracetheblue.com -->
   <text x="400" y="590" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#0C3260" letter-spacing="1.5">tracetheblue.com</text>
