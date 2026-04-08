@@ -843,6 +843,16 @@ h3, .h3 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
+  margin-bottom: 2px;
+}
+
+.pricing-card__subtitle {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5DCAA5;
   margin-bottom: 8px;
 }
 
